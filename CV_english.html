@@ -1,0 +1,985 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+ <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+ <meta name="robots" content="noindex" />
+ <title>CV (english version)</title>
+<style>
+* {  }
+body {
+    font: 80% "Raleway", Helvetica, Lucida Grande,Lucida,Verdana,sans-serif; 
+    line-height: 1.5em;
+}
+
+*.CVSimpleOff {
+   display: none;
+}
+#controlPanel { 
+   position: fixed; 
+   left: 1px; width:60px; top: 0.5%; height:99%;
+   z-index:1px; border-right: 1px solid grey; text-align:center; 
+   /* text-shadow: 0 0 2px grey; */
+}
+
+#controlPanel a { font-size:30px; }
+table[main_block] { margin-left: 65px; width:calc(95%-65px); border-botton:0px; padding:0px; align: center; }
+table[main_block] td { padding:3px; border-spacing: 0px; }
+
+table[main_block]#table_languages,
+table[main_block]#table_personalBlog { border:0px; }
+
+#table_languages { font-family:courier, mono; }
+
+span[importantTech] { color: rgb(106, 168, 79); font-weight:bold; }
+
+#table_languages tr,
+#table_personalBlog tr { background-color:transparent;}
+
+*[bt] { border-top   : 1px solid black; }
+*[bt] td { border-top   : 1px solid black; }
+*[bb] { border-bottom: 1px solid black; }
+
+h2 { margin-left: 65px; text-align: left; /* text-shadow: 0 0 2px grey; */}
+#table_Education { border:1px solid grey;}
+td { vertical-align:top; } 
+
+#table_chartCompanyYear, 
+#table_chartTechnologyYears,
+#table_chartIndustryYears {
+    outline: 1px solid black;
+    width: calc(100% - 65px);
+    font-weight: normal;
+}
+
+#table_chartTechnologyYears td, #table_chartIndustryYears td {
+  width:10em; /* default */
+  border-right: 1px solid black; /* default */
+  padding: 1px; 
+}
+#table_chartCompanyYear td {
+  width:14px; /* default */ padding: 0; border-spacing: 0;
+}
+#table_chartCompanyYear td[comp] {
+  font-family:courier;
+  width: 8em; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-right: 1px solid black;
+  padding-left: 0.2em;
+}
+#table_chartTechnologyYears tr td {
+    margin: 0;
+    padding: 0 0 0 0.2em;
+    text-align: center;
+}
+
+td[left] { width:10em; text-align: right; } 
+td[x]{ background-color:black; } /* x is a "cross" indicating selected */
+td[s]{ border-left:1px solid black; }
+#daratel  td[x]{ background-color:blue;  }
+#ccunizar td[x]{ background-color:grey;  }
+#nyesa    td[x]{ background-color:orange;}
+#wpr      td[x]{ background-color:#F00;  }
+#diversia td[x]{ background-color:brown; }
+#viotech  td[x]{ background-color:violet;}
+#everis   td[x]{ background-color:#0F0;  }
+
+tr:nth-child(odd) { background-color: #EEEEEE; }
+.even             { background-color: rgb(207, 226, 243); }
+tr:nth-child(even){               }
+
+
+*[blue]   { background-color:   #DDF; }
+*[brown]  { background-color:#CCAAAA; }
+*[white]  { background-color:#FFFFFF; }
+*[courier]{ font-family:courier; } 
+*[center] { text-align: center; }
+@media print
+{    
+    body { font: serif; }
+    .no-print, .no-print *
+    { display: none !important; }
+}
+@media display
+{    
+    .no-display, .no-display *
+    {
+        display: none !important;
+    }
+}
+@media screen
+{    
+    .no-screen, .no-screen *
+    {
+        display: none !important;
+    }
+}
+</style>
+<script>
+var onLoad      = function () {
+   window.bodyStyle=document.getElementsByTagName('body')[0].style;
+   changeFontSize(true);
+}
+
+var scroll_idx = 0
+var scroll_lst = [ 'anchor_top', 'anchor_contactData', 'anchor_education', 'anchor_additionalEducation', 'anchor_chartCompanyYear', 'anchor_chartTechnologyYears', 'anchor_chartIndustryYears', 'anchor_laboralExperience', 'anchor_languages', 'anchor_personalBlog', 'anchor_portfolio', 'anchor_cons' ]
+
+
+var scroll_to = function() {
+    var id1 = scroll_lst[scroll_idx];
+    document.getElementById(id1).scrollIntoView({behavior: "smooth"});
+}
+
+var scroll_up = function(id1) {console.log("dw"+scroll_idx); scroll_idx = scroll_idx >=                0 ? --scroll_idx:scroll_idx; scroll_to();}
+var scroll_dw = function(id1) {console.log("up"+scroll_idx); scroll_idx = scroll_idx < scroll_lst.length ? ++scroll_idx:scroll_idx; scroll_to();}
+
+var size_list = [ "20px", "25px", "30px" ];
+var size_idx  = 0;
+var changeFontSize  = function (bReset) {
+    if (!!bReset) { size_idx = -1 }
+    if (++size_idx == size_list.length) { size_idx = 0;}
+     bodyStyle.fontSize = size_list[size_idx]; 
+     scroll_to();
+}
+var color_list = [ ["black","white"] , ["red","#FFFF99"] , ["#999999","#CCCCCC"] ];
+var color_idx  = 0;
+var changeColor = function ( ) {
+    if (++color_idx == color_list.length) { color_idx = 0;}
+     bodyStyle.color = color_list[color_idx][0]; 
+     bodyStyle.backgroundColor = color_list[color_idx][1]; 
+}
+</script>
+</head>
+<body onload="onLoad()">
+<div id='controlPanel' class='no-print'> 
+    <div  onClick='changeFontSize()' style='padding:10px 0 10px 0;'>
+        <span style='font-size:10px;'>A</span>
+        <span style='font-size:15px;'>A</span>
+        <span style='font-size:20px;'>A</span>
+    </div>
+    <div onClick='changeColor("black","#FFFF99")' bb bt>
+       <div style='line-height:0.7em; background-color:  white;'>&nbsp;</div> 
+       <div style='line-height:0.7em; background-color:#FFFF99;'>&nbsp;</div> 
+       <div style='line-height:0.7em; background-color:#CCCCCC;'>&nbsp;</div> 
+    </div>
+    <a onClick='scroll_up()' >&Uarr;</a></br>
+    <a onClick='scroll_dw()' >&Darr;</a></br>
+</div>
+<p center style="font-size:25px; /* text-shadow: grey 1px 1px*/ "   id='anchor_top'>
+    CURRICULUM VITAE<br/>
+    Enrique Ariz&oacute;n Benito<br/>
+    Full stack Software Architect<br/>
+    Core developer of the <a target='_blank' href='https://singlepagebookproject.github.io/SPB/'>Single-Page Book Project</a><br/>
+</p>
+
+<i class='no-screen' style="text-align: center;">
+  This is a printed copy of the online document available at:<br/>
+     <a href='http://www.oficina24x7.com/CV_english01.html'>http://www.oficina24x7.com/CV_english01.html</a><br/>
+  (The online version will provide a better layout and links to external information)
+</i>
+<h2 class='no-print'>INDEX</h2>
+<div style="align: left; text-align:left;" class='no-print'>
+<ol style="margin-left:65px;">
+   <li><a href="#anchor_contactData">Contact Data</a></li>
+   <li><a href="#anchor_education" />Education</a></li>
+   <li CVSimpleOff><a href="#anchor_additionalEducation" />Additional Education</a></li>
+   <li><a href="#anchor_chartCompanyYear" />Visual Summary Company/Year</a></li>
+   <li><a href="#anchor_chartTechnologyYears" />Visual Summary Technology/Years</a></li>
+   <li><a href="#anchor_chartIndustryYears" />Visual Summary Industry/Years</a></li>
+   <li><a href="#anchor_laboralExperience" />Laboral Experience</a></li>
+   <li><a href="#anchor_languages" />Languages</a></li>
+   <li CVSimpleOff><a href="#anchor_personalBlog" />"Social" Links</a></li>
+   <li CVSimpleOff><a href="#anchor_personalBlog" />"Portfolio"</a></li>
+   <li><a href="#anchor_cons" style="color:red;"/>WARNING: CONS</a></li>
+</ol>
+<br/><br/><br/><br/>
+</div>
+
+
+<a id="anchor_contactData" { />
+<h2>CONTACT DATA</h2>
+<table id="table_contactData" main_block>
+<tbody>
+    <tr> <td courier left>Surname       </td><td>Enrique</td> </tr>
+    <tr> <td courier left>Family Name   </td><td>Ariz&oacute;n Benito</td> </tr>
+    <tr> <td courier left>e-mail       </td><td>enrique.arizonbenito@gmail.com</td> </tr>
+</tbody>
+</table><!-- id: table_contactData -->
+</a>
+
+<a id="anchor_education" }{ />
+<h2>EDUCATION</h2>
+<table id="table_Education" main_block { >
+<tbody>
+<tr CVSimpleOff>
+    <td left>1995 - Today:     </td> <td width="auto" style='font-size:1.2em; font-style:italics;'>Internet</td>
+</tr>
+<tr>
+    <td left>1992&nbsp; - 1999:</td> <td width="auto">Bachelor's degree in Physics (<a href='http://en.wikipedia.org/wiki/University_of_Zaragoza' target='_blank'>University of Zaragoza</a>) </td>
+</tr>
+</tbody>
+</table }>
+
+<h2>Certifications</h2>
+<table id="table_Education" main_block { >
+<tbody>
+<tr CVSimpleOff>
+    <th style="width:auto;">Certification</th> <th width="auto">Issued by</th> <th>Expiration Date</th>
+</tr>
+<tr CVSimpleOff>
+    <td><a target="_new" href="https://www.youracclaim.com/badges/8c9db864-a871-4c96-a29f-13a99dd850ca/linked_in_profile">R3 Corda Certified Developer</td>
+    <td>R3 Consortium</td> 
+    <td width="auto" style='font-size:1.2em; font-style:italics;'>N/A</td>
+</tr>
+<tr>
+    <td><a target="_new" href="https://www.youracclaim.com/badges/6728180e-4f18-4fe1-bed8-ec4d98619442/public_url">
+        Microsoft Azure Developer Associate
+    </td>
+    <td>Microsoft</td>
+    <td width="auto">Jun 2022</td>
+</tr>
+</tbody>
+</table }>
+
+<a id="anchor_additionalEducation" }{ />
+<h2 CVSimpleOff>ADDITIONAL EDUCATION</h2>
+<table id="table_additionalEducation" main_block CVSimpleOff { >
+<tbody CVSimpleOff>
+<tr  CVSimpleOff>
+    <td>
+     Self-taught education on IT fields  (modeling/architect/developing, software architecture,
+     Algorithms, REST API management, Web technologies, cryptography and security,
+     front/middleware/backend), ...
+    </td>
+</tr>
+<tr>
+     <td>Core Java and related technologies (J2EE, Spring, async I/O frameworks,...)</td>
+</tr>
+<tr>
+     <td>Exposure and familiarity to wide range of software architectures 
+        (Monolithic/micro-services/streaming/asycn/concurrent architectures,
+         and databases technologies (relational/graph/non-sql/time-series/...), 
+         (distributed) caching,...
+     </td>
+</tr>
+<tr>
+    <td>
+        Depth knowledge of QA and risk-management throught all development life cycles
+        (analysis, project development, deployment, maintenance and service 
+         retirement/replacement) and associated tooling (unit/functional/chaos testing
+         frameworks, scripting, reporting, ...)
+    </td>
+</tr>
+<tr>
+    <td>
+      Long experience in DevOps highlighting Linux administration, shell scripts,
+      Container Technologies, Kubernetes, GNU tool chain, PXE installation, ...
+    </td>
+</tr>
+<tr>
+    <td>Networking familiarity IP technologies (TCP/UDP, VPNs, DNS, ,...) 
+        WAN/LAN/IoT networks and higher protocols (HTTP, HTTP 2.0, gRPC, ...)
+    </td>
+</tr>
+<tr>
+    <td>Networking experience with next environments/tools: Unix tools (ifconfig, nmap, 
+        route, socat, tcpdump, ...), Siemens HiPath, low-end Cisco, 3Com and Zyxel routers.
+    </td>
+</tr>
+</tbody>
+</table } >
+<p style="page-break-after:always;"></p>
+
+
+<p style="page-break-after:always;"></p>
+
+<a id="anchor_chartCompanyYear" }{ />
+<h2>VISUAL SUMMARY COMPANY/YEAR</h2> 
+<table id="table_chartCompanyYear" main_block cellpadding=0 cellspacing=0>
+<tbody>
+<tr style='line-height:0.9em'>
+    <td comp> </td>
+    <td bb colspan="98" center>YEAR</td>
+</tr>
+<tr style='line-height:0.9em'>
+    <td comp> </td>
+    <td s colspan="4" center>01</td>
+    <td s colspan="4" center>02</td>
+    <td s colspan="4" center>03</td>
+    <td s colspan="4" center>04</td>
+    <td s colspan="4" center>05</td>
+    <td s colspan="4" center>06</td>
+    <td s colspan="4" center>07</td>
+    <td s colspan="4" center>08</td>
+    <td s colspan="4" center>09</td>
+    <td s colspan="4" center>10</td>
+    <td s colspan="4" center>11</td>
+    <td s colspan="4" center>12</td>
+    <td s colspan="4" center>13</td>
+    <td s colspan="4" center>14</td>
+    <td s colspan="4" center>15</td>
+    <td s colspan="4" center>16</td>
+    <td s colspan="4" center>17</td>
+    <td s colspan="4" center>18</td>
+    <td s colspan="4" center>19</td>
+    <td s colspan="4" center>20</td>
+</tr>
+<tr id='daratel'>
+    <td comp>DARATEL </td>
+<!--01--><td s  /> <td x/> <td x/> <td x/> <!--02--><td s x/> <td x/> <td x/> <td x/> <!--03--><td s x/> <td x/> <td x/> <td x/> <!--04--><td s x/> <td x/> <td x/> <td x/>
+<!--05--><td s x/> <td x/> <td x/> <td x/> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td  /> <td  /> <!--08--><td s  /> <td  /> <td  /> <td  /> 
+<!--09--><td s  /> <td  /> <td  /> <td  /> <!--10--><td s  /> <td  /> <td  /> <td  /> <!--11--><td s  /> <td  /> <td  /> <td  /> <!--12--><td s  /> <td  /> <td  /> <td  />
+<!--13--><td s  /> <td  /> <td  /> <td  /> <!--14--><td s  /> <td  /> <td  /> <td  /> <!--15--><td s  /> <td  /> <td  /> <td  />
+<!--16--><td s /> <td  /> <td  /> <td  />
+<!--17--><td s /> <td  /> <td  /> <td  />
+<!--18--><td s /> <td  /> <td  /> <td  />
+<!--19--><td s /> <td  /> <td  /> <td  />
+<!--20--><td s /> <td  /> <td  /> <td  />
+</tr>
+<tr id='ccunizar'>
+    <td comp>Cen.C&aacute;l.Uni.Zar.</td>
+<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td x/> <td x/> <!--03--><td s x/> <td x/> <td x/> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  /> 
+<!--05--><td s  /> <td  /> <td  /> <td  /> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td  /> <td  /> <!--08--><td s  /> <td  /> <td  /> <td  /> 
+<!--09--><td s  /> <td  /> <td  /> <td  /> <!--10--><td s  /> <td  /> <td  /> <td  /> <!--11--><td s  /> <td  /> <td  /> <td  /> <!--12--><td s  /> <td  /> <td  /> <td  />
+<!--13--><td s  /> <td  /> <td  /> <td  /> <!--14--><td s  /> <td  /> <td  /> <td  /> <!--15--><td s  /> <td  /> <td  /> <td  />
+<!--16--><td s/> <td  /> <td  /> <td  />
+<!--17--><td s /> <td  /> <td  /> <td  />
+<!--18--><td s /> <td  /> <td  /> <td  />
+<!--19--><td s /> <td  /> <td  /> <td  />
+<!--20--><td s /> <td  /> <td  /> <td  />
+</tr>
+<tr id='freelance'>
+    <td comp>FreeLance </td>
+<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  /> 
+<!--05--><td s  /> <td  /> <td x/> <td x/> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td  /> <td  /> <!--08--><td s  /> <td  /> <td  /> <td  /> 
+<!--09--><td s  /> <td  /> <td  /> <td  /> <!--10--><td s  /> <td  /> <td x/> <td x/> <!--11--><td s x/> <td x/> <td  /> <td  /> <!--12--><td s  /> <td  /> <td  /> <td  />
+<!--13--><td s  /> <td  /> <td  /> <td  /> <!--14--><td s  /> <td  /> <td  /> <td x/> <!--15--><td s x/> <td x/> <td  /> <td  />
+<!--16--><td s/> <td  /> <td  /> <td  />
+<!--17--><td s /> <td  /> <td  /> <td  />
+<!--18--><td s /> <td  /> <td  /> <td  />
+<!--19--><td s /> <td  /> <td  /> <td  />
+<!--20--><td s /> <td  /> <td  /> <td  />
+</tr>
+<tr id='wpr'>
+    <td comp>W.P.R. </td>
+<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  /> 
+<!--05--><td s  /> <td  /> <td  /> <td x/> <!--06--><td s x/> <td x/> <td x/> <td x/> <!--07--><td s x/> <td x/> <td x/> <td x/> <!--08--><td s x/> <td x/> <td x/> <td x/>
+<!--09--><td s x/> <td x/> <td x/> <td  /> <!--10--><td s  /> <td  /> <td  /> <td  /> <!--11--><td s  /> <td  /> <td  /> <td  /> <!--12--><td s  /> <td  /> <td  /> <td  />
+<!--13--><td s  /> <td  /> <td  /> <td  /> <!--14--><td s  /> <td  /> <td  /> <td  /> <!--15--><td s  /> <td  /> <td  /> <td  />
+<!--16--><td s/> <td  /> <td  /> <td  />
+<!--17--><td s /> <td  /> <td  /> <td  />
+<!--18--><td s /> <td  /> <td  /> <td  />
+<!--19--><td s /> <td  /> <td  /> <td  />
+<!--20--><td s /> <td  /> <td  /> <td  />
+</tr>
+<tr id='diversia'>
+    <td comp>DiversiaTV</td>
+<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  /> 
+<!--05--><td s  /> <td  /> <td  /> <td  /> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td x/> <td x/> <!--08--><td s x/> <td x/> <td x/> <td x/> 
+<!--09--><td s x/> <td x/> <td x/> <td x/> <!--10--><td s x/> <td x/> <td x/> <td x/> <!--11--><td s x/> <td x/> <td  /> <td  /> <!--12--><td s  /> <td  /> <td  /> <td  />
+<!--13--><td s  /> <td  /> <td  /> <td  /> <!--14--><td s  /> <td  /> <td  /> <td  /> <!--15--><td s  /> <td  /> <td  /> <td  />
+<!--16--><td s/> <td  /> <td  /> <td  />
+<!--17--><td s /> <td  /> <td  /> <td  />
+<!--18--><td s /> <td  /> <td  /> <td  />
+<!--19--><td s /> <td  /> <td  /> <td  />
+<!--20--><td s /> <td  /> <td  /> <td  />
+</tr>
+<tr id='viotech'>
+    <td comp>Viotech</td>
+<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  /> 
+<!--05--><td s  /> <td  /> <td  /> <td  /> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td  /> <td  /> <!--08--><td s  /> <td  /> <td  /> <td  />
+<!--09--><td s  /> <td  /> <td  /> <td  /> <!--10--><td s  /> <td  /> <td  /> <td  /> <!--11--><td s  /> <td  /> <td  /> <td x/> <!--12--><td s x/> <td x/> <td x/> <td x/>
+<!--13--><td s x/> <td x/> <td x/> <td x/> <!--14--><td s x/> <td x/> <td x/> <td  /> <!--15--><td s  /> <td  /> <td  /> <td  />
+<!--16--><td s/> <td  /> <td  /> <td  />
+<!--17--><td s /> <td  /> <td  /> <td  />
+<!--18--><td s /> <td  /> <td  /> <td  />
+<!--19--><td s /> <td  /> <td  /> <td  />
+<!--20--><td s /> <td  /> <td  /> <td  />
+</tr>
+<tr id='everis'>
+    <td comp>Everis(NTT data)</td>
+<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  /> 
+<!--05--><td s  /> <td  /> <td  /> <td  /> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td  /> <td  /> <!--08--><td s  /> <td  /> <td  /> <td  />
+<!--09--><td s  /> <td  /> <td  /> <td  /> <!--10--><td s  /> <td  /> <td  /> <td  /> <!--11--><td s  /> <td  /> <td  /> <td  /> <!--12--><td s  /> <td  /> <td  /> <td  />
+<!--13--><td s  /> <td  /> <td  /> <td  /> <!--14--><td s  /> <td  /> <td  /> <td  /> <!--15--><td s  /> <td  /> <td x/> <td x/>
+<!--16--><td s x/> <td x/> <td x/> <td x/>
+<!--17--><td s x/> <td x/> <td x/> <td x/>
+<!--18--><td s x/> <td x/> <td x/> <td x/>
+<!--19--><td s x/> <td x/> <td x/> <td x/>
+<!--20--><td s x/> <td x/> <td x/> <td  />
+</tr>
+
+</tbody>
+</table><!-- id:table_chartCompanyYear -->
+<br><br>
+
+<a id="anchor_chartTechnologyYears" }{ />
+<!-- { -->
+<h2>VISUAL SUMMARY TECHNOLOGY/YEARS OF EXPERIENCE</h2>
+<table id="table_chartTechnologyYears" main_block cellpadding=0 cellspacing=0 >
+<tbody>
+<tr>
+  <td bb center>1 Year</td>
+  <td bb center>2 Years</td>
+  <td bb center>3 Years</td>
+  <td bb center>4 Years</td>
+  <td bb center>5+ Years</td>
+</tr>
+<tr> <td       bb colspan=5>&nbsp;Programming&API design</td> </tr>
+<tr> <td       bb colspan=5>&nbsp;Frontend Development</td> </tr>
+<tr> <td       bb colspan=5>&nbsp;Backend  Development</td> </tr>
+<tr> <td       bb colspan=5>&nbsp;TCP/IP (+REST, RPC, gRPC, ...)</td> </tr>
+<tr> <td       bb colspan=5>&nbsp;Java/Java EE/Spring</td> </tr>
+<tr> <td       bb colspan=5>&nbsp;Linux/UNIX   </td> </tr>
+<tr> <td       bb colspan=5>&nbsp;Shell scripts</td> </tr>
+<tr> <td       bb colspan=5>&nbsp;SQL          </td> </tr>
+<tr> <td       bb colspan=5>&nbsp;JS+HTML5     </td> </tr>
+<tr> <td       bb colspan=4>&nbsp;Blockchain/FinTech crypto</td> <td white    colspan=1></td> </tr>
+<tr> <td       bb colspan=4>&nbsp;Micro(Decoupled) Services</td> <td white    colspan=1></td> </tr>
+<tr> <td       bb colspan=4>&nbsp;C/C++        </td> <td white    colspan=1></td> </tr>
+<tr> <td       bb colspan=4>&nbsp;Python       </td> <td white    colspan=1></td> </tr>
+<tr> <td       bb colspan=4>&nbsp;Async Dev (Kafka, Vert.X, NodeJS,...)</td> <td white    colspan=1></td> </tr>
+<tr> <td       bb colspan=3>&nbsp;PHP          </td> <td white    colspan=2></td> </tr>
+<tr> <td       bb colspan=3>&nbsp;Real Time app</td> <td white    colspan=2></td> </tr>
+<tr> <td       bb colspan=3>&nbsp;SVN/GIT      </td> <td white    colspan=2></td> </tr>
+<tr> <td       bb colspan=2>&nbsp;Embedded/LUA/uControllers/...</td> <td white    colspan=3></td> </tr>
+<tr> <td       bb colspan=2>&nbsp;Android+NDK  </td> <td white    colspan=4></td> </tr>
+<tr> <td       bb colspan=1>&nbsp;Go Lang      </td> <td white    colspan=4></td> </tr>
+<tr> <td       bb colspan=1>&nbsp;Oracle       </td> <td white    colspan=4></td> </tr>
+</tbody>
+</table><!-- id:table_chartTechnologyYears -->
+<br><br>
+<!-- } -->
+
+<a id="anchor_chartIndustryYears" }{ />
+<!-- { -->
+<h2>VISUAL SUMMARY INDUSTRY/YEARS OF EXPERIENCE</h2>
+<table id="table_chartIndustryYears" main_block cellpadding=0 cellspacing=0 { >
+<tbody>
+<tr>
+  <td bb center>1 Year </td>
+  <td bb center>2 Years</td>
+  <td bb center>3+Years</td>
+</tr>
+<tr><td center bb colspan=3>&nbsp;IT &amp; Telecommunications       </td></tr> 
+<tr><td center bb colspan=3>&nbsp;Consultancy Services              </td></tr> 
+<tr><td center bb colspan=3>&nbsp;Media &amp; Entertainment         </td></tr> 
+<tr><td center bb colspan=3>&nbsp;ERP                               </td></tr> 
+<tr><td center bb colspan=3>&nbsp;Telephony Applications(IVR)       </td></tr> 
+<tr><td center bb colspan=3>&nbsp;Fintech(Blockchain, Payments, HFT)</td></tr> 
+<tr><td center bb colspan=1>&nbsp;Manufacturing                     </td>
+    <td center bb colspan=2></td>                                        </tr>
+</tbody>
+</table } >
+<p style="page-break-after:always;"></p>
+<!-- } -->
+
+<a id="anchor_laboralExperience" }{ />
+<h2>WORKING EXPERIENCE</h2>
+<table id="table_laboralExperience" main_block cellpadding=0 cellspacing=0>
+<tbody>
+<!-- ***************************************************************************************************  -->
+<tr bt>
+    <td colspan='2'>Note: Technologies used are highlighted <span importantTech>using this format</span></td>
+</tr>
+<!-- ***************************************************************************************************  -->
+
+
+<tr bt>
+    <td>Date</td> <td> July 2016 - Today</td>
+</tr>
+<tr>
+ <td>Employer</td><td><a href='http://www.everis.com/' target='_blank'>Everis</a> (an NTT Data Company)</td>
+</tr>
+<tr>
+ <td>Title</td><td>Solutions Specific Knowledge Analyst</td>
+</tr>
+<tr>
+ <td>Duties</td>
+ <td>
+     <ul>
+       <li>Study and analysis of blockchain architectures (<span importantTech>Bitcoin, Ripple, Ethereum</span>, Corda R3, Lightning,... ), 
+           and financial-cryptography related technologies</li>
+       <li>Initial java implementation of 
+	       <a href='https://github.com/interledger/java-crypto-conditions'>CryptoConditions</a> 
+           (<a ref='https://github.com/interledger/rfcs/tree/master/0002-crypto-conditions'>Crypto-Condition spec</a>)
+           and  collaboration in the development of Interledger Protocol <a href='https://github.com/interledger/java-ilp-core'>
+           Java implementation</a> and <a href='https://github.com/everis-innolab/ilp-everconnector'>PoC ledger</a></li>
+       <li>Development of generic Ethereum development framework for non-repudiable tracing,
+	       and probe of existence using <span importantTech>Java, Kotlin, VertX and Kafka(JSON/JSON-Schema)</span>
+           for the FrontEnd REST API and <span importantTech>web3j</span> for the Blockchain 
+           "backend" as well as other PoC Blockchain applications for Insurance, Public Sector
+            and  finance (exchanges, auctions, ...)</li>
+       <li>Collaboration in different European Commission projects designing and developing
+           based or related to blockchain highlighting blockchain notarization projects
+           for <a target="_new" href="https://europa.eu/europass/en">Europass</a> including
+           production deployments, and technical support and advise for the European Blockchain
+           Service Architecture framework 
+           (<a target="_new" href="https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/ebsi">EBSI</a>)
+           in areas like functional testing and adoption of Solidity development "best-patterns".</li>
+       <li>Ethereum backed software for control of Real State power-supply and gas provisioning for
+           a major international firm.</li>
+       <li>Study of Distributed Digital Identity solutions ("Self Souverign ID") backed by 
+           Ethereum public/consortium networks and W3C DID and W3C Verifiable Credentials 
+           (draft) standards</li>
+       <li>Internal introductory and advanced blockchain training to IT personnel</li>
+       <li>Design of the blockchain architecture (smart-contracts and middleware) and
+           computing/deployment infrastructure for a consortium network focusing on
+           automatic payments and billing of Electric Car stations.</li>
+       <li>Deployments based on <span importantTech>monolitic and micro(decoupled)</span> 
+           architectures based on different tecnologies.(JEE app servers, tomcat, Kubernetes/OpenShift, 
+           standard/contanerized linux deployments, Azure pipelines, ...)</li>
+     </ul>
+ </td>
+</tr>
+
+<!-- ***************************************************************************************************  -->
+<tr bt>
+    <td>Date</td> <td> September 2015 - July 2016</td>
+</tr>
+<tr>
+ <td>Employer</td><td><a href='http://www.everis.com/' target='_blank'>Everis</a> (an NTT Data Company)</td>
+</tr>
+<tr>
+ <td>Title</td><td>Solutions Specific Knowledge Analyst</td>
+</tr>
+<tr>
+ <td>Duties</td>
+ <td>
+     <ul>
+       <li>Software integration and system integration(<span importantTech>Java/JEE/Spring, Docker</span>)</li>
+       <li>Web Component developer (<span importantTech>Javascript, JQuery, CSS, Selenium functional-testing</span>)</li>
+       <li><a href='https://github.com/everis-innolab/java-ilp-master'>Java implementation</a> of the
+           <a href='https://interledger.org/' target='_new'>Interledger protocol</a> in <span importantTech>Java/Vert.X</span> and integration with Node.JS reference implementation.
+       </li>
+     </ul>
+ </td>
+</tr>
+<!-- ***************************************************************************************************  -->
+<tr bt>
+    <td>Date</td> <td> January 2015 - June 2015</td>
+</tr>
+<tr>
+ <td>Employer</td><td>"Freelance"</td>
+</tr>
+<tr>
+ <td>Title</td><td>Software developer</td>
+</tr>
+<tr CVSimpleOff >
+ <td>Duties</td>
+ <td>
+     <ul>
+       <li>2/3-tier Web Software development (<span importantTech>Java/JEE/Spring, Python, PHP, C/C++, JavaScript</span>).</li>
+       <li>code review and quality assurance.</li>
+       <li>Software integration.</li>
+     </ul>
+ </td>
+</tr>
+<!-- ***************************************************************************************************  -->
+<tr bt>
+    <td>Date</td> <td> October 2011 - December 2014</td>
+</tr>
+<tr>
+ <td>Employer</td><td><a target='_blank' href='http://www.viotech.net'>Viotech Labs</a></td>
+</tr>
+<tr>
+ <td>Title</td><td>Services Development Manager</td>
+</tr>
+<tr CVSimpleOff>
+ <td>Duties</td>
+ <td>
+     <ul>
+      <li>Coordination&amp;implementation of a cross-platform system (Android, iOS, Web)
+          home entertainment system. The system is composed of a home server ("advanced set-top box")
+          able to adapt and stream content to the different clients. Other provided functionalities
+          include a multi-channel sharing mechanism, chat/video-conference, smart-TV functionalities
+          -for example possibility to watch TV and browse the web simultaneously-<br/>
+      </li>Development of the server based on <span importantTech>Python+Twisted</span> 
+           (API design, unit-test, functional-tests, documentation). 
+      </li>
+      <li>Development of the Web client based on HTML+Javascript+CSS, using advanced 
+          HTML5 technologies (<span importantTech>WebSockets</span>, 
+          <span importantTech>WebRTC</span>, AJAX, ...).
+      </li>
+      <li>The server is about 15000 lines of Python code and the HTML client about 17000 lines of javascript code.</li>
+      <li>Research and integration of different technologies for <span importantTech>video content adaptation</span> 
+          (transcoding, bandwidth adaptation, HLS &amp; DASH streaming).<br/>
+          Development and support of a <span importantTech>multithreaded C server</span> to transcode 
+          in parallel <span importantTech>live(real time transcoding) TV</span>. 
+          Creation and maintenance of the Debian packages and "continuous-integration" infrastructure.<br/> 
+          Adaptation to embedded ARM systems using the <span importantTech>cross-compilation GCC tool chain</span>.<br/>
+      </li>
+      <li>Support for the R&amp;D <a  target='_blank' href='https://www.facebook.com/ictalicante'>Alicante project</a>, mainly as 
+          software developer, implementing different protocols and technologies presented in the software stack/architecture.
+          (with different services implemented in <span importantTech>Java/JEE/Spring</span>, Python and PHP) 
+      </li>
+      <li>Development of an embedded application (implemented in <span importantTech>LUA</span> with C extensions 
+          and an HTML5 Interface) for P2P video delivery
+      </li>
+     </ul>
+ </td>
+<tr>
+ <td>Notes</td><td>work environment: French and English</td>
+</tr>
+</tr>
+<!-- ***************************************************************************************************  -->
+<tr bt>
+    <td>Date</td> <td> May 2010 - Sep 2011</td>
+</tr>
+<tr>
+ <td>Employer</td><td>"Freelance"</td>
+</tr>
+<tr>
+ <td>Title</td><td>Software developer</td>
+</tr>
+<tr CVSimpleOff>
+ <td>Duties</td>
+ <td>
+     <ul>
+      <li>
+       Development of a <span importantTech>VoiceXML</span> custom front-end to control a telephony system based on 
+       <span importantTech>Siatvox</span>. The system includes the development of a <span importantTech>C++ dll extension</span> to 
+       the Siatvox platform, a java extension to <a  target='_blank' href='http://jvoicexml.sourceforge.net/'>JVoiceXML</a> as well as an 
+       intermediate (java) message broker to provide for asynchronous communications between both 
+       ends (Siatvox and JVoiceXML). 
+      </li>
+      <li>
+       Development of a Java <a  target='_blank' href='http://sourceforge.net/projects/siruna/'>Siruna adaptor</a> to 
+       automatically translate HTML into VoiceXML.
+      </li>
+      <li>
+       Development of a <span importantTech>(Java+Spring+Hibernate)</span> webapp
+       front-end for the administration and monitoring of the systems just described.
+      </li>
+      <li>
+       Development of a <span importantTech>C++ (event-driven) application for Samsung Bada</span> phones 
+       providing a native (multi-)touch interface to PaginasAmarillas (YellowPages) as well as 
+       integration with Google Maps through an embedded browser. 
+      </li>
+      <li>
+       Development of an webapp for the administration of an custom IVR setup. The 
+       application was developed using PHP+Smarty+MySQL and JQuery (javascript) for the Web UI.
+<!--
+       An online demo can be visited at 
+       <a  target='_blank' href="http://178.79.168.230/sipmanager/" title="http://178.79.168.230/sipmanager/">http://178.79.168.230/sipmanager/</a>
+-->
+      </li>
+     </ul>
+ </td>
+</tr>
+<!-- ***************************************************************************************************  -->
+<tr bt>
+   <td>Date</td> 
+   <td>April 2007- September 2011<br>
+      (I continued to work simultaneously for World Premium Rates as external IT consultant up to July 2009).
+   </td>
+</tr>
+<tr>
+    <td>Employer</td> <td>DiversiaTV</td>
+</tr>
+<tr>
+ <td>Title</td>
+ <td>System Integrator</td>
+</tr>
+<tr CVSimpleOff>
+ <td>Duties</td>
+ <td>
+     <ul>
+     <li>
+      Creation of the hardware requirements &amp; software specifications for a custom 
+      <span importantTech>Video On Demand</span> solution and entertainment system for hotels and hospitals. 
+     </li>
+     <li> <span importantTech>PHP/Javascript/CSS/Shell script</span> programming. </li>
+     <li> <span importantTech>SVN</span> Repository administration&amp;coordination. </li>
+     <li> development/maintenance of a custom network-bootable PXE linux distribution for embedded systems
+      (VIA fanless and Intel atom clusters). By 2009 there were more than 1000 deployed clients working 24x7.
+     </li>
+     <li> <b>quality-assurance</b>(manual checks and inspection of source code as well as development of unit-tests).  </li>
+     </ul>
+     <ul>
+     <li>
+         Development of a plugable system to connect the Video On Demand to Hotel's
+         management software, either directly or through the mediation of the 
+         <span importantTech>Char uTile middleware</span>.
+     </li>
+     <li>
+         (July 2009 to October 2009) :implementation and manufacturing control of an 
+         <span importantTech>universal infrared transceiver</span> controlled by software.
+         The hardware was designed to be fully adaptable to different IR 
+         protocols and provides extra I/O ports to simplify integration with domotic systems.
+         It was based on the previous design from 
+         <a  target='_blank' href='http://www.huitsing.nl/irftdi/' target='_blank'>Albert Huitsing FTDI design</a>
+         with a few bugs fixed (see cite 2-7-2009 about Enrique's patch)
+     </li>
+     </ul>
+ </td>
+</tr>
+<!-- ***************************************************************************************************  -->
+<tr bt>
+ <td>Date</td> <td>December 2005 - July 2009</td>
+</tr>
+<tr>
+ <td>Employer</td> <td><b><a  target='_blank' href="http://www.qtis.es/eng/index.html" title="">World Premium Rates</a></b></td>
+</tr>
+<tr>
+ <td>Title</td><td>R&amp;D - Software Developer - Linux System Administrator</td>
+</tr>
+<tr CVSimpleOff>
+ <td>Duties</td>
+ <td>
+     <ul>
+     <li>
+        Studying, designing and implementing new payment systems based on Premium SMS 
+        &amp; Phone calls, as well as automating &amp; monitoring of IT 
+        systems and billing processes (watchDog, automated log reporting,...).
+     </li>
+     <li> Porting/correcting/updating existing documentation to the new CMS based on 
+          <span importantTech>Plone</span></li>
+     <li>
+         Development of a <b>multi-threaded web app offering real time statistics &amp; charts</b>
+         (0.5 seconds maximum delay with up to 100 simultaneous users).
+         Major Spanish TV broadcasting companies -Endemol, Tele5, Antena3, ...- use it
+           in a daily basis to check audience response.<br>
+         The chart system was developed with the help of 
+         <span importantTech>The Dojo Toolkit</span> (100% Javascript+SVG, no flash plugin).<br>
+         The final code added up to 8874 lines of java, 3627 lines of jsp, 800 lines
+         of javascript and about 1500 lines of shell scripts for supporting task.
+         (HTTP unit-tests, deployment, backups, logging facilities).
+     </li>
+     <li>
+         Integration with external <b>messaging systems</b> (<span importantTech>mBlox, Latinia</span>
+        and custom designed WAN connectors).
+     </li>
+     <li>
+         Development of supporting infrastructure for telephony applications (CMS, call-centers, TV shows).<br>
+         Development of a bus-bridge to control the internal PBX call flow through externals Java servlets
+     </li>
+     <li>
+         Replacement of time-critical database queries with in-memory java chache for real-time applications.
+         (improving the response time of applications by orders of magnitude)<br>
+     </li>
+     <li>
+         Multimaster clustering of Java applications using <span importantTech>Terracotta</span>.
+     </li>
+     </ul>
+ </td>
+</tr>
+<!-- ***************************************************************************************************  -->
+<tr bt>
+ <td>Date</td> <td>June 2005 - December 2005</td>
+</tr>
+<tr>
+ <td>Employer</td> <td>"Freelance"</td>
+</tr>
+<tr>
+ <td>Title</td> <td> Freelance Consultant </td>
+</tr>
+<tr CVSimpleOff>
+ <td>Duties</td>
+ <td>
+     <ul>
+     <li>
+      providing advice for&nbsp; modeling, developing and integrating database based 
+      solutions for the enterprise using standard Web technologies (J2EE, 
+      <span importantTech>Spring Web Flow</span>, ...)
+     </li>
+     <li>custom python-based solutions for fast development.</li>
+     </ul>
+ </td>
+</tr>
+<!-- ***************************************************************************************************  -->
+<tr bt>
+ <td>Date</td> <td> October 2002 - September 2003: <br>(I continued to work as freelance consultant for DARATEL).</td>
+</tr>
+<tr>
+ <td>Employer</td>
+ <td>
+   <b>CENTRO DE CALCULO of the UNIVERSITY OF ZARAGOZA</b>&nbsp;
+  <a  target='_blank' href="http://sicuz.unizar.es/">(http://www.unizar.es/sicuz/) </a>&nbsp; 
+  <br>(<b>After passing a national public entrance exam, 4th classified over 200 examined.</b>)
+ </td>
+</tr>
+<tr>
+ <td>Title</td> <td>Programmer-Analyst</td>
+</tr>
+<tr CVSimpleOff>
+ <td>Duties</td>
+ <td>
+     <ul>
+     <li>planning of the deployment of a&nbsp;
+      <i>802.11g</i>&nbsp;network over the Campus with Central Authentication based on&nbsp;
+      <i>802.11X</i>&nbsp;standards (EAP and RADIUS)
+     </li>
+     <li>Study of different solutions for VPN technologies&nbsp;</li>
+     <li>Maintenance of several <span importantTech>Solaris 8/9</span> servers </li>
+     </ul>
+ </td>
+</tr>
+<!-- ***************************************************************************************************  -->
+<tr bt>
+    <td>Date</td>  <td> March 2001-November 2005 </td>
+</tr>
+<tr>
+ <td>Employer</td> <td> <b>DARATEL </b> (<a  target='_blank' href="http://www.daratel.com/" title="http://www.daratel.com">http://www.daratel.com</a>) </td>
+</tr>
+<tr>
+ <td>Title</td>  <td>Programmer</td>
+</tr>
+<tr CVSimpleOff>
+ <td>Duties</td>
+ <td>
+     <ul>
+       <li>
+         Development of a custom <span importantTech>Supply Chain/ERP+CRM Web application</span> 
+         based on J2EE for internal/external use. <span importantTech>JBoss</span> was used as application server
+         and PostgreSQL as DDBB.
+       </li>
+       <li>
+          Setup of Siemens&nbsp; <span importantTech>HiPath HG1500</span> PBX to VoIP gateways,
+          including PBX trunking through DSL and IP Wan Networks, using Linux netfilter to provide QoS. </li>
+       <li> Setup and maintenance of clients servers:&nbsp; <i>SMTP/POP3/IMAP servers </i>&nbsp;
+          running on <span importantTech>Postfix, Spamassasin, Pymavis, Procmail</span></li>
+       <li>
+          Setup and maintenance of the network firewall (Linux IPTable based), proxy-caches (Squid),&nbsp;
+          VPNs (OpenVPN with PKI), <i>Terminal Servers</i>, Windows Domain Controllers, Radius and LDAP.
+       </li>
+       <li> Development of "small" applications based on&nbsp; CGI Scripts. </li>
+       <li> Development of an Web Content Management System based on Plone+Archetipes.</li>
+       <li> Setup and maintenance of a Central Backup system. </li>
+     </ul>
+ </td>
+</tr>
+<!-- ***************************************************************************************************  -->
+<tr bt>
+ <td>Date</td> <td> September 2000 - February 2001 </td>
+</tr>
+<tr>
+ <td>Employer</td> <td>N/A - English student stay in Bournemouth - Dorset</td>
+</tr>
+<tr>
+ <td>Title</td> <td> Student (English practices) </td>
+</tr>
+<tr CVSimpleOff>
+ <td> Duties  </td> <td> </td>
+</tr>
+<!-- ***************************************************************************************************  -->
+<tr bt>
+ <td>Date</td> <td> October 1999 - March 2000 </td>
+</tr>
+<tr>
+ <td>Employer</td>
+ <td> N/A </td>
+</tr>
+<tr>
+ <td>Title</td> <td> Student </td>
+</tr>
+<tr CVSimpleOff>
+ <td>Duties</td>
+ <td>
+ <ul>
+     <li>
+      Development of a particle detector simulator using&nbsp;
+      <span importantTech>GEANT4</span> (toolkit of physics libraries based on <span importantTech>C++ and STL</span>.).
+      More info at: <a  target='_blank' href="http://geant4.cern.ch/" title="Geant4 at CERN">http://geant4.cern.ch/
+      </a>
+     </li>
+     </ul>
+ </td>
+</tr>
+<!-- ***************************************************************************************************  -->
+<tr bt>
+ <td>Date</td> <td> March 1999 - October 1999 </td>
+</tr>
+<tr>
+ <td>Employer</td>
+ <td> <b>N/A (Military Service) </b> </td>
+</tr>
+<tr>
+ <td>Title</td>
+ <td> Recruit </td>
+</tr>
+<tr CVSimpleOff>
+ <td> Duties  </td>
+ <td>
+ <ul>
+ <li> Updating of the computing system for the management of recruits including upgrading the graphics user interface of the data base (Access). </li>
+ <li> Development of an automatic system for periodic backups. </li>
+ <li> Networking the different computers available </li>
+ <li> Creation of an Excel+VBScript software for calculating effective staff work hours. </li>
+ </ul>
+ </td>
+</tr>
+<!-- ***************************************************************************************************  -->
+</tbody>
+</table><!-- id: table_laboralExperience -->
+<!-- p style="page-break-after:always;"></p -->
+<a id="anchor_languages" }{ />
+<h2>LANGUAGES</h2> 
+<table id="table_languages" border="0" main_block>
+ <tbody>
+ <tr>
+   <td>
+     <ul>
+       <li>ENGLISH : Fluent </li>
+       <li>FRENCH  : Fluent </li>
+       <li>ITALIAN : Basic  </li>
+       <li>SPANISH : Native </li>
+     </ul>
+   </td>
+ </tr>
+</tbody>
+</table><!-- id:table_languages -->
+
+<a id="anchor_personalBlog" }{ />
+<h2 CVSimpleOff>"SOCIAL" LINKS</h2>
+<table id="table_personalBlog" border="0" main_block  CVSimpleOff>
+ <tbody> 
+ <tr> <td>Stack Exchange</td><td><a target="_blank" href='https://stackexchange.com/users/1233610/earizon?tab=accounts'>https://stackexchange.com/users/1233610/earizon?tab=accounts</a></td> </tr>
+ <tr> <td>Linked-In     </td><td><a target="_blank" href=' https://www.linkedin.com/in/enrique-arizon-benito-8466458/'> https://www.linkedin.com/in/enrique-arizon-benito-8466458/</a></td> </tr>
+</tbody>
+</table><!-- id:table_personalBlog -->
+<a id="end" } />
+
+<a id="anchor_portfolio" }{ />
+<h2 CVSimpleOff>"PORTFOLIO"</h2>
+<table id="table_portfolio" border="0" main_block  CVSimpleOff>
+ <tbody> 
+ <tr> <td>IT Notes</td>
+     <td><a target="_blank" href='http://www.oficina24x7.com'>http://www.oficina24x7.com</a>
+     </td>
+ </tr>
+ <tr> <td>GitHub Activity</td><td>
+    <a target="_blank" href='https://github.com/earizon/'>https://github.com/earizon/</a><br/>
+    <a target="_blank" href='https://github.com/earizon?tab=activity'>https://github.com/earizon?tab=activity</a></td> 
+ </tr>
+ <tr> <td>StackExchange Activity</td><td>
+    <a target="_blank" href='https://stackoverflow.com/users/1197682/earizon'>https://stackoverflow.com/users/1197682/earizon</a><br/>
+ </tr>
+</tbody>
+</table><!-- id:table_personalBlog -->
+<a id="end" } />
+
+
+<a id="anchor_cons" }{ />
+<h2 CVSimpleOff style="color:red;">WARNING: CONS</h2>
+<table border="0" main_block  CVSimpleOff>
+<tbody>
+<tr>
+    <td><b style="color:red;">Skills or educations I am missing</b> (in my "TO-DO" list) include
+        better familiarity with Machine Learning/IA and Big data technologies.</td>
+</tr>
+<tr>
+    <td><b style="color:red;">Skills I am really bad at include</b> administrative work
+        (keeping my CV updated, reporting working hours, ...), PowerPoint tasks,
+        work without coffee.
+    </td>
+</tr>
+</tbody>
+</table } >
+
+
+<p style="page-break-after:always;"></p>
+</body>
+</html>
+.
