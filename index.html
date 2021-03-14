@@ -39,7 +39,11 @@ span[importantTech] { color: rgb(106, 168, 79); font-weight:bold; }
 *[bt] td { border-top   : 1px solid black; }
 *[bb] { border-bottom: 1px solid black; }
 
-h2 { margin-left: 65px; text-align: left; /* text-shadow: 0 0 2px grey; */}
+h2 { 
+    margin-left: 65px;
+    text-align: left; /* text-shadow: 0 0 2px grey; */
+    margin-bottom:0;
+}
 #table_Education { border:1px solid grey;}
 td { vertical-align:top; } 
 
@@ -170,28 +174,27 @@ var changeColor = function ( ) {
 <p center style="font-size:25px; /* text-shadow: grey 1px 1px*/ "   id='anchor_top'>
     CURRICULUM VITAE<br/>
     Enrique Ariz&oacute;n Benito<br/>
-    Full stack Software Architect<br/>
-    Core developer of the <a target='_blank' href='https://singlepagebookproject.github.io/SPB/'>Single-Page Book Project</a><br/>
 </p>
 
-<i class='no-screen' style="text-align: center;">
-  This is a printed copy of the online document available at:<br/>
-     <a href='http://www.oficina24x7.com/CV_english01.html'>http://www.oficina24x7.com/CV_english01.html</a><br/>
-  (The online version will provide a better layout and links to external information)
-</i>
+<div class='no-screen' style="text-align: center;">
+  <h4>About this document</h4>:
+  This document is a printed version of the original one available at <br/>
+  <a href='http://www.oficina24x7.com/CV_english.html'>http://www.oficina24x7.com/CV_english01.html</a>.  Document changes can be audited by browsing <a href="https://github.com/earizon/CV/commits/master/index.html">GitHub</a>. <br/>
+  You are invited to visit the online version to get the most up-to-date version.
+</div>
+
 <h2 class='no-print'>INDEX</h2>
 <div style="align: left; text-align:left;" class='no-print'>
 <ol style="margin-left:65px;">
    <li><a href="#anchor_contactData">Contact Data</a></li>
    <li><a href="#anchor_education" />Education</a></li>
-   <li CVSimpleOff><a href="#anchor_additionalEducation" />Additional Education</a></li>
+   <li CVSimpleOff><a href="#anchor_additionalEducation" />About me</a></li>
    <li><a href="#anchor_chartCompanyYear" />Visual Summary Company/Year</a></li>
    <li><a href="#anchor_chartTechnologyYears" />Visual Summary Technology/Years</a></li>
    <li><a href="#anchor_chartIndustryYears" />Visual Summary Industry/Years</a></li>
    <li><a href="#anchor_laboralExperience" />Laboral Experience</a></li>
    <li><a href="#anchor_languages" />Languages</a></li>
-   <li CVSimpleOff><a href="#anchor_personalBlog" />"Social" Links</a></li>
-   <li CVSimpleOff><a href="#anchor_personalBlog" />"Portfolio"</a></li>
+   <li><a href="#anchor_externalLinks" />External Links</a></li>
    <li><a href="#anchor_cons" style="color:red;"/>WARNING: CONS</a></li>
 </ol>
 <br/><br/><br/><br/>
@@ -243,57 +246,32 @@ var changeColor = function ( ) {
 </tbody>
 </table }>
 
-<a id="anchor_additionalEducation" }{ />
-<h2 CVSimpleOff>ADDITIONAL EDUCATION</h2>
+<a id="anchor_additionalEducation" }{ /></a>
+<h2 CVSimpleOff style="margin-bottom:0">About me</h2>
 <table id="table_additionalEducation" main_block CVSimpleOff { >
 <tbody CVSimpleOff>
-<tr  CVSimpleOff>
-    <td>
-     Self-taught education on IT fields  (modeling/architect/developing, software architecture,
-     Algorithms, REST API management, Web technologies, cryptography and security,
-     front/middleware/backend), ...
-    </td>
-</tr>
 <tr>
-     <td>Core Java and related technologies (J2EE, Spring, async I/O frameworks,...)</td>
-</tr>
-<tr>
-     <td>Exposure and familiarity to wide range of software architectures 
-        (Monolithic/micro-services/streaming/asycn/concurrent architectures,
-         and databases technologies (relational/graph/non-sql/time-series/...), 
-         (distributed) caching,...
-     </td>
-</tr>
-<tr>
-    <td>
-        Depth knowledge of QA and risk-management throught all development life cycles
-        (analysis, project development, deployment, maintenance and service 
-         retirement/replacement) and associated tooling (unit/functional/chaos testing
-         frameworks, scripting, reporting, ...)
-    </td>
-</tr>
-<tr>
-    <td>
-      Long experience in DevOps highlighting Linux administration, shell scripts,
-      Container Technologies, Kubernetes, GNU tool chain, PXE installation, ...
-    </td>
-</tr>
-<tr>
-    <td>Networking familiarity IP technologies (TCP/UDP, VPNs, DNS, ,...) 
-        WAN/LAN/IoT networks and higher protocols (HTTP, HTTP 2.0, gRPC, ...)
-    </td>
-</tr>
-<tr>
-    <td>Networking experience with next environments/tools: Unix tools (ifconfig, nmap, 
-        route, socat, tcpdump, ...), Siemens HiPath, low-end Cisco, 3Com and Zyxel routers.
-    </td>
+  <td>
+    Full stack Software Developer&amp;Architect with Wide experience in
+    managing the Software Development Life Cycle (SDLC), of embedded,
+    front-end, middleware and back-end platform and 20 years of 
+    expereince with different technology stacks citing <b>Java Stack</b> 
+    (core, J2EE, Spring, async I/O "many concurrent clients" frameworks,
+    monitoring, profiling, troubleshooting, ...), <b>Python Stack</b>(core, 
+    Django, Numpy/Pandas, Twisted Matrix,...), <b>C/C++</b>, 
+    <b>LUA</b>(embedded systems), <b>net Core</b> (C#, aspNet),  
+    different <b>blockchain stacks</b> (R3 Corda, Ethereum, Fabric, ...)
+    and <b>DevOps technologies</b> (git, shell scripting, Linux tool chain, 
+    Docker/Kubernetes containers, Jenkins, Sonarqube, ansible, Prometheus,
+    Grafana,...).
+  </td>
 </tr>
 </tbody>
 </table } >
 <p style="page-break-after:always;"></p>
 
 
-<a id="anchor_chartCompanyYear" }{ />
+<a id="anchor_chartCompanyYear" }{ /></a>
 <h2>VISUAL SUMMARY COMPANY/YEAR</h2> 
 <table id="table_chartCompanyYear" main_block cellpadding=0 cellspacing=0>
 <tbody>
@@ -938,31 +916,45 @@ var changeColor = function ( ) {
 </tbody>
 </table><!-- id:table_languages -->
 
-<a id="anchor_personalBlog" }{ />
-<h2 CVSimpleOff>"SOCIAL" LINKS</h2>
+<a id="anchor_externalLinks" }{ />
+<h2 CVSimpleOff>External Links</h2>
 <table id="table_personalBlog" border="0" main_block  CVSimpleOff>
- <tbody> 
- <tr> <td>Stack Exchange</td><td><a target="_blank" href='https://stackexchange.com/users/1233610/earizon?tab=accounts'>https://stackexchange.com/users/1233610/earizon?tab=accounts</a></td> </tr>
- <tr> <td>Linked-In     </td><td><a target="_blank" href=' https://www.linkedin.com/in/enrique-arizon-benito-8466458/'> https://www.linkedin.com/in/enrique-arizon-benito-8466458/</a></td> </tr>
-</tbody>
-</table><!-- id:table_personalBlog -->
-<a id="end" } />
-
-<a id="anchor_portfolio" }{ />
-<h2 CVSimpleOff>"PORTFOLIO"</h2>
-<table id="table_portfolio" border="0" main_block  CVSimpleOff>
- <tbody> 
- <tr> <td>IT Notes</td>
-     <td><a target="_blank" href='http://www.oficina24x7.com'>http://www.oficina24x7.com</a>
-     </td>
- </tr>
- <tr> <td>GitHub Activity</td><td>
+<tbody> 
+<tr>
+  <td>Stack Exchange</td>
+  <td><a target="_blank" href='https://stackexchange.com/users/1233610/earizon?tab=accounts'>https://stackexchange.com/users/1233610/earizon?tab=accounts</a>
+  </td>
+<tr>
+<tr>
+  <td>Linked-In</td>
+  <td><a target="_blank" href=' https://www.linkedin.com/in/enrique-arizon-benito-8466458/'> https://www.linkedin.com/in/enrique-arizon-benito-8466458/</a></td> 
+</tr>
+<tr>
+  <td>GitHub</td>
+  <td>
     <a target="_blank" href='https://github.com/earizon/'>https://github.com/earizon/</a><br/>
-    <a target="_blank" href='https://github.com/earizon?tab=activity'>https://github.com/earizon?tab=activity</a></td> 
- </tr>
- <tr> <td>StackExchange Activity</td><td>
-    <a target="_blank" href='https://stackoverflow.com/users/1197682/earizon'>https://stackoverflow.com/users/1197682/earizon</a><br/>
- </tr>
+    <a target="_blank" href='https://github.com/earizon?tab=activity'>https://github.com/earizon?tab=activity</a>
+  </td> 
+</tr>
+<tr>
+  <td>Others:</td>
+  <td>Core technical writer of <a target="_blank" href='http://www.oficina24x7.com'>"IT notes"</a> based on the "serverless" <a target='_blank' href='https://singlepagebookproject.github.io/SPB/'>Single-Page Book Project CMS</a>. <br/>
+      I use this project to write down and classify in the most compact and
+      efficient way all techn.notes I collect while working on different projects.<br/>
+      <b>☞It probably reflects much better my technical expertise than this CV.☜</b>
+      <br/>
+      As an example, it follows the notes on 
+      <a target="_new" href="http://www.oficina24x7.com/JAVA/java_map.html?topics=qa">
+         Java and QA</a>,
+      <a target="_new" href="http://www.oficina24x7.com/JAVA/java_map.html?topics=monitoring">
+         Java and monitoring</a>,
+     <a target="_new" href="http://www.oficina24x7.com/Architecture/architecture_map.html">
+         Enterprise Patterns in Soft. architecture</a> or
+     <a target="_new"
+         href="http://www.oficina24x7.com/DevOps/kubernetes_map.html?topics=troubleshooting,application">
+         Kubernetes Application Troubleshooting notes</a>.
+  </td>
+</tr>
 </tbody>
 </table><!-- id:table_personalBlog -->
 <a id="end" } />
