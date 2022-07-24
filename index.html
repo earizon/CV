@@ -81,13 +81,15 @@ td { vertical-align:top; }
 td[left] { width:10em; text-align: right; } 
 td[x]{ background-color:black; } /* x is a "cross" indicating selected */
 td[s]{ border-left:1px solid black; }
-#daratel  td[x]{ background-color:blue;  }
-#ccunizar td[x]{ background-color:grey;  }
-#nyesa    td[x]{ background-color:orange;}
-#wpr      td[x]{ background-color:#F00;  }
-#diversia td[x]{ background-color:brown; }
-#viotech  td[x]{ background-color:violet;}
-#everis   td[x]{ background-color:#0F0;  }
+#daratel   td[x]{ background-color:blue;  }
+#ccunizar  td[x]{ background-color:grey;  }
+#freelance td[x]{ background-color:yellow;}
+#nyesa     td[x]{ background-color:orange;}
+#wpr       td[x]{ background-color:#F55;  }
+#diversia  td[x]{ background-color:brown; }
+#viotech   td[x]{ background-color:#FAA;  }
+#everis    td[x]{ background-color:#AFA;  }
+#accenture td[x]{ background-color:#AAF;  }
 
 tr:nth-child(odd) { background-color: #EEEEEE; }
 .even             { background-color: rgb(207, 226, 243); }
@@ -306,6 +308,7 @@ var changeColor = function ( ) {
     <td s colspan="4" center>19</td>
     <td s colspan="4" center>20</td>
     <td s colspan="4" center>21</td>
+    <td s colspan="4" center>22</td>
 </tr>
 <tr id='daratel'>
     <td comp>DARATEL </td>
@@ -319,6 +322,7 @@ var changeColor = function ( ) {
 <!--19--><td s /> <td  /> <td  /> <td  />
 <!--20--><td s /> <td  /> <td  /> <td  />
 <!--21--><td s /> <td  /> <td  /> <td  />
+<!--22--><td s /> <td  /> <td  /> <td  />
 </tr>
 <tr id='ccunizar'>
     <td comp>Cen.C&aacute;l.Uni.Zar.</td>
@@ -332,6 +336,7 @@ var changeColor = function ( ) {
 <!--19--><td s /> <td  /> <td  /> <td  />
 <!--20--><td s /> <td  /> <td  /> <td  />
 <!--21--><td s /> <td  /> <td  /> <td  />
+<!--22--><td s /> <td  /> <td  /> <td  />
 </tr>
 <tr id='freelance'>
     <td comp>FreeLance </td>
@@ -345,6 +350,7 @@ var changeColor = function ( ) {
 <!--19--><td s /> <td  /> <td  /> <td  />
 <!--20--><td s /> <td  /> <td  /> <td  />
 <!--21--><td s /> <td  /> <td  /> <td  />
+<!--22--><td s /> <td  /> <td  /> <td  />
 </tr>
 <tr id='wpr'>
     <td comp>W.P.R. </td>
@@ -358,6 +364,7 @@ var changeColor = function ( ) {
 <!--19--><td s /> <td  /> <td  /> <td  />
 <!--20--><td s /> <td  /> <td  /> <td  />
 <!--21--><td s /> <td  /> <td  /> <td  />
+<!--22--><td s /> <td  /> <td  /> <td  />
 </tr>
 <tr id='diversia'>
     <td comp>DiversiaTV</td>
@@ -371,6 +378,7 @@ var changeColor = function ( ) {
 <!--19--><td s /> <td  /> <td  /> <td  />
 <!--20--><td s /> <td  /> <td  /> <td  />
 <!--21--><td s /> <td  /> <td  /> <td  />
+<!--22--><td s /> <td  /> <td  /> <td  />
 </tr>
 <tr id='viotech'>
     <td comp>Viotech</td>
@@ -384,6 +392,7 @@ var changeColor = function ( ) {
 <!--19--><td s /> <td  /> <td  /> <td  />
 <!--20--><td s /> <td  /> <td  /> <td  />
 <!--21--><td s /> <td  /> <td  /> <td  />
+<!--22--><td s /> <td  /> <td  /> <td  />
 </tr>
 <tr id='everis'>
     <td comp>Everis(NTT data)</td>
@@ -397,7 +406,23 @@ var changeColor = function ( ) {
 <!--19--><td s x/> <td x/> <td x/> <td x/>
 <!--20--><td s x/> <td x/> <td x/> <td x/>
 <!--21--><td s x/> <td x/> <td  /> <td  />
+<!--22--><td s  /> <td  /> <td  /> <td  />
 </tr>
+<tr id='accenture'>
+    <td comp>Accenture</td>
+<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  /> 
+<!--05--><td s  /> <td  /> <td  /> <td  /> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td  /> <td  /> <!--08--><td s  /> <td  /> <td  /> <td  />
+<!--09--><td s  /> <td  /> <td  /> <td  /> <!--10--><td s  /> <td  /> <td  /> <td  /> <!--11--><td s  /> <td  /> <td  /> <td  /> <!--12--><td s  /> <td  /> <td  /> <td  />
+<!--13--><td s  /> <td  /> <td  /> <td  /> <!--14--><td s  /> <td  /> <td  /> <td  /> <!--15--><td s  /> <td  /> <td  /> <td  />
+<!--16--><td s  /> <td  /> <td  /> <td  />
+<!--17--><td s  /> <td  /> <td  /> <td  />
+<!--18--><td s  /> <td  /> <td  /> <td  />
+<!--19--><td s  /> <td  /> <td  /> <td  />
+<!--20--><td s  /> <td  /> <td  /> <td  />
+<!--21--><td s  /> <td  /> <td x/> <td x/>
+<!--22--><td s x/> <td x/> <td  /> <td  />
+</tr>
+
 
 </tbody>
 </table><!-- id:table_chartCompanyYear -->
@@ -415,27 +440,23 @@ var changeColor = function ( ) {
   <td bb center>4 Years</td>
   <td bb center>5+ Years</td>
 </tr>
-<tr> <td br bb colspan=5>&nbsp;Programming&API design</td> </tr>
-<tr> <td br bb colspan=5>&nbsp;Frontend Development</td> </tr>
-<tr> <td br bb colspan=5>&nbsp;Backend  Development</td> </tr>
+<tr> <td br bb colspan=5>&nbsp;Programming&amp;API design</td></tr>
+<tr> <td br bb colspan=5>&nbsp;Frontend Development (JavaScript/TypeScript,Angular/Preact/QT/GTK/,...)</td> </tr>
+<tr> <td br bb colspan=5>&nbsp;Middleware/Backend  Development (VertX/Spring/JEE, GoLang, Twisted/Django, ESB, ETL/Batch, ...)</td> </tr>
 <tr> <td br bb colspan=5>&nbsp;TCP/IP (+REST, RPC, gRPC, ...)</td> </tr>
 <tr> <td br bb colspan=5>&nbsp;Java/Java EE/Spring</td> </tr>
-<tr> <td br bb colspan=5>&nbsp;Linux/UNIX   </td> </tr>
-<tr> <td br bb colspan=5>&nbsp;Shell scripts</td> </tr>
-<tr> <td br bb colspan=5>&nbsp;SQL          </td> </tr>
-<tr> <td br bb colspan=5>&nbsp;JS+HTML5     </td> </tr>
-<tr> <td br bb colspan=4>&nbsp;Blockchain/FinTech crypto</td> <td white    colspan=1></td> </tr>
-<tr> <td br bb colspan=4>&nbsp;Micro(Decoupled) Services</td> <td white    colspan=1></td> </tr>
+<tr> <td br bb colspan=5>&nbsp;Linux/UNIX (GNU utils, profiling, low-level-monitoring, ...)   </td> </tr>
+<tr> <td br bb colspan=5>&nbsp;DevOps(Git,Containers,Shell script,CI-CD, ...)</td> </tr>
+<tr> <td br bb colspan=5>&nbsp;Data Architecture (SQL/NO-SQL, Graph, Time Series, ...)</td> </tr>
+<tr> <td br bb colspan=5>&nbsp;Web Tech (JS,HTML5, REST APIs/GraphQL, Cache, ...)</td> </tr>
+<tr> <td br bb colspan=5>&nbsp;Blockchain/FinTech crypto</td> </tr>
+<tr> <td br bb colspan=5>&nbsp;Micro(Decoupled) Services</td> </tr>
+<tr> <td br bb colspan=5>&nbsp;Distributed Architectures (Event-Stream/Async/Strong-Consistent/...)</td> </tr>
 <tr> <td br bb colspan=4>&nbsp;C/C++        </td> <td white    colspan=1></td> </tr>
-<tr> <td br bb colspan=4>&nbsp;Python       </td> <td white    colspan=1></td> </tr>
-<tr> <td br bb colspan=4>&nbsp;Async Dev (Kafka, Vert.X, NodeJS,...)</td> <td white    colspan=1></td> </tr>
-<tr> <td br bb colspan=3>&nbsp;PHP          </td> <td white    colspan=2></td> </tr>
 <tr> <td br bb colspan=3>&nbsp;Real Time app</td> <td white    colspan=2></td> </tr>
-<tr> <td br bb colspan=3>&nbsp;SVN/GIT      </td> <td white    colspan=2></td> </tr>
-<tr> <td br bb colspan=2>&nbsp;Embedded/LUA/uControllers/...</td> <td white    colspan=3></td> </tr>
+<tr> <td br bb colspan=3>&nbsp;Embedded(uControllers,LUA,uPython,cross-compilation,...)</td> <td white    colspan=3></td> </tr>
 <tr> <td br bb colspan=2>&nbsp;Android+NDK  </td> <td white    colspan=4></td> </tr>
 <tr> <td br bb colspan=1>&nbsp;Go Lang      </td> <td white    colspan=4></td> </tr>
-<tr> <td br bb colspan=1>&nbsp;Oracle       </td> <td white    colspan=4></td> </tr>
 </tbody>
 </table><!-- id:table_chartTechnologyYears -->
 <br><br>
@@ -471,6 +492,29 @@ var changeColor = function ( ) {
 <!-- ***************************************************************************************************  -->
 <tr bt>
     <td colspan='2'>Note: Technologies used are highlighted <span importantTech>using this format</span></td>
+</tr>
+<!-- ***************************************************************************************************  -->
+
+<tr bt>
+    <td>Date</td> <td> July 2021 - Present  </td>
+</tr>
+<tr>
+ <td>Employer</td><td><a href='http://www.accenture.com/' target='_blank'>Accenture</a></td>
+</tr>
+<tr>
+ <td>Title</td><td>Team Lead/Consultant</td>
+</tr>
+<tr>
+ <td>Duties</td>
+ <td>
+     <ul>
+       <li>Study and analysis of blockchain architectures (<span importantTech>Fabric, Ethereum, Corda R3</span>)
+           and financial-cryptography related technologies</li>
+       <li>Development of Accelerator Asset for (public and permissioned) Blockchain-based products</li>
+       <li>Collaboration in pre-production Ethereum based solution for important International Bank
+           using AWS cloud technologies (<span importantTech>SQS, Lambdas, ECS, API-Gateways, IAM integration, Terraform) </span>)   </li>
+     </ul>
+ </td>
 </tr>
 <!-- ***************************************************************************************************  -->
 
@@ -988,4 +1032,22 @@ var changeColor = function ( ) {
 
 </body>
 </html>
-.
+<!-- 
+Cliffton Report:
+• Learner: 
+  Exceptionally talented in the Learned theme have a great desire to learn and want to 
+  continuosly improve. The process of learning, rather than the outcome, excites them.
+
+• Deliberateive:
+  People exceptional talented in the Deliberative theme are best described by the 
+ serious care they take in making decisions or choices. They anticipate obstacles.
+
+• Context: Pe. excp. talented in the Con. theme enjoy thinking about the past. They understand 
+  the present by researching its history.
+
+• Analytical search for reasons and causes. They have the ability to think about all of 
+  the factos that might affect a situations.
+
+• Input: Have a need to collect and archive. They may accumulate information, ideas, 
+  artifacts or even relationships.
+-->
