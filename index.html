@@ -3,21 +3,21 @@
 <head>
  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
  <meta name="robots" content="noindex" />
- <title>CV (english version)</title>
+ <title>CURRICULUM VITAE Enrique Arizón Benito. 4x4 full stack Software Architect</title>
 <style>
 * {  }
 body {
-    font: 80% "Raleway", Helvetica, Lucida Grande,Lucida,Verdana,sans-serif; 
+    font: 80% "Raleway", Helvetica, Lucida Grande,Lucida,Verdana,sans-serif;
     line-height: 1.5em;
 }
 
 *.CVSimpleOff {
    display: none;
 }
-#controlPanel { 
-   position: fixed; 
+#controlPanel {
+   position: fixed;
    left: 1px; width:60px; top: 0.5%; height:99%;
-   z-index:1px; border-right: 1px solid grey; text-align:center; 
+   z-index:1px; border-right: 1px solid grey; text-align:center;
    /* text-shadow: 0 0 2px grey; */
 }
 
@@ -39,15 +39,15 @@ span[importantTech] { color: rgb(106, 168, 79); font-weight:bold; }
 *[bt] td { border-top   : 1px solid black; }
 *[bb] { border-bottom: 1px solid black; }
 
-h2 { 
+h2 {
     margin-left: 65px;
     text-align: left; /* text-shadow: 0 0 2px grey; */
     margin-bottom:0;
 }
 #table_Education { border:1px solid grey;}
-td { vertical-align:top; } 
+td { vertical-align:top; line-height: 1.4em;}
 
-#table_chartCompanyYear, 
+#table_chartCompanyYear,
 #table_chartTechnologyYears,
 #table_chartIndustryYears {
     outline: 1px solid black;
@@ -58,14 +58,14 @@ td { vertical-align:top; }
 #table_chartTechnologyYears td, #table_chartIndustryYears td {
   width:10em; /* default */
   border-right: 1px solid black; /* default */
-  padding: 1px; 
+  padding: 1px;
 }
 #table_chartCompanyYear td {
   width:14px; /* default */ padding: 0; border-spacing: 0;
 }
 #table_chartCompanyYear td[comp] {
   font-family:courier;
-  width: 8em; 
+  width: 8em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -78,7 +78,7 @@ td { vertical-align:top; }
     text-align: center;
 }
 
-td[left] { width:10em; text-align: right; } 
+td[left] { width:10em; text-align: right; }
 td[x]{ background-color:black; } /* x is a "cross" indicating selected */
 td[s]{ border-left:1px solid black; }
 #daratel   td[x]{ background-color:blue;  }
@@ -99,23 +99,23 @@ tr:nth-child(even){               }
 *[blue]   { background-color:   #DDF; }
 *[brown]  { background-color:#CCAAAA; }
 *[white]  { background-color:#FFFFFF; }
-*[courier]{ font-family:courier; } 
+*[courier]{ font-family:courier; }
 *[center] { text-align: center; }
 @media print
-{    
+{
     body { font: serif; }
     .no-print, .no-print *
     { display: none !important; }
 }
 @media display
-{    
+{
     .no-display, .no-display *
     {
         display: none !important;
     }
 }
 @media screen
-{    
+{
     .no-screen, .no-screen *
     {
         display: none !important;
@@ -145,30 +145,30 @@ var size_idx  = 0;
 var changeFontSize  = function (bReset) {
     if (!!bReset) { size_idx = -1 }
     if (++size_idx == size_list.length) { size_idx = 0;}
-     bodyStyle.fontSize = size_list[size_idx]; 
+     bodyStyle.fontSize = size_list[size_idx];
      scroll_to();
 }
 var color_list = [ ["black","white"] , ["red","#FFFF99"] , ["#999999","#CCCCCC"] ];
 var color_idx  = 0;
 var changeColor = function ( ) {
     if (++color_idx == color_list.length) { color_idx = 0;}
-     bodyStyle.color = color_list[color_idx][0]; 
-     bodyStyle.backgroundColor = color_list[color_idx][1]; 
+     bodyStyle.color = color_list[color_idx][0];
+     bodyStyle.backgroundColor = color_list[color_idx][1];
 }
 </script>
 </head>
 <body onload="onLoad()">
 <img src="http://www.oficina24x7.com/CV_visited.png" style="display:none"  />
-<div id='controlPanel' class='no-print'> 
+<div id='controlPanel' class='no-print'>
     <div  onClick='changeFontSize()' style='padding:10px 0 10px 0;'>
         <span style='font-size:10px;'>A</span>
         <span style='font-size:15px;'>A</span>
         <span style='font-size:20px;'>A</span>
     </div>
     <div onClick='changeColor("black","#FFFF99")' bb bt>
-       <div style='line-height:0.7em; background-color:  white;'>&nbsp;</div> 
-       <div style='line-height:0.7em; background-color:#FFFF99;'>&nbsp;</div> 
-       <div style='line-height:0.7em; background-color:#CCCCCC;'>&nbsp;</div> 
+       <div style='line-height:0.7em; background-color:  white;'>&nbsp;</div>
+       <div style='line-height:0.7em; background-color:#FFFF99;'>&nbsp;</div>
+       <div style='line-height:0.7em; background-color:#CCCCCC;'>&nbsp;</div>
     </div>
     <a onClick='scroll_up()' >&Uarr;</a></br>
     <a onClick='scroll_dw()' >&Darr;</a></br>
@@ -176,6 +176,7 @@ var changeColor = function ( ) {
 <p center style="font-size:25px; /* text-shadow: grey 1px 1px*/ "   id='anchor_top'>
     CURRICULUM VITAE<br/>
     Enrique Ariz&oacute;n Benito<br/>
+    4x4 full stack Software Architect
 </p>
 
 <div class='no-screen' style="text-align: center;">
@@ -236,7 +237,7 @@ var changeColor = function ( ) {
 </tr>
 <tr CVSimpleOff>
     <td><a target="_new" href="https://www.youracclaim.com/badges/8c9db864-a871-4c96-a29f-13a99dd850ca/linked_in_profile">R3 Corda Certified Developer</td>
-    <td>R3 Consortium</td> 
+    <td>R3 Consortium</td>
     <td width="auto" style='font-size:1.2em; font-style:italics;'>N/A</td>
 </tr>
 <tr>
@@ -255,22 +256,26 @@ var changeColor = function ( ) {
 <tbody CVSimpleOff>
 <tr>
   <td>
-    Full stack Software Developer&amp;Architect with Wide experience in
-    managing the Software Development Life Cycle (SDLC), of embedded,
-    front-end, middleware and back-end platform and more than 20 years of 
-    experience with different technology stacks citing <b>Java Stack</b> 
-    (core, J2EE, Spring, async frameworks, monitoring, profiling,
-    troubleshooting, ...), <b>Python Stack</b>(core, 
-    Django, Numpy/Pandas, Twisted Matrix,...), <b>C/C++</b>, 
-    <b>LUA</b>(embedded systems), <b>net Core</b> (C#, aspNet),  
-    different <b>blockchain stacks</b> (R3 Corda, Ethereum, Fabric, ...)
-    , <b>DevOps technologies</b> (git, shell scripting, Linux tool chain, 
-    Docker/Kubernetes containers, Jenkins, Sonarqube, Ansible, Prometheus,
-    Grafana,...), <b>web standards</b> (HTML/JavaScript/PWA/HTTPs/OAuth2/,
-    ...), <b>API design</b>  (library "local" APIs  and remote REST/gRPC APIs) 
-    and <b>Architecture patterns</b> (async/reactive service, micro/decoupled
-    services, service balancing, parallel processing, distributed monitoring
-    and tracing, ...).
+    <b>Software Architect</b> with wide experience managing the
+    Software Development Life Cycle (SDLC) of embedded, front-end, middleware,
+    back-end, distributed, decoupled, async/reactive platforms wit more than
+    20 years of experience with different technology stacks
+    citing <b>Golang</b>, <b>Java</b> (core, J2EE, Spring, Vert.X), <b>Node.JS</b>,
+    <b>Python</b>(core, Django, Numpy/Pandas, Twisted), <b>C/C++</b> (gcc/gdb,
+    Valgrind, ... ), <b>Embedded/Mobile</b> (Android, Yocto), <b>DevOps</b>
+    (git, shell scripting, Linux tool chain, containers, ...),
+    <b>web standards</b> (HTML/JS,PWA, OAuth2/OpenID, ...),
+    <b>API design</b> (local and remote -RESTFull/gRPC/GraphQL),
+    <b>Technical documentation</b> (UML, taxonomies, QA flows,
+    CMS&amp;static web site generation, ...), <b>Software Security</b>
+    (OS layer, network, OWASP, cryptography) ... <br/>
+    <br/> <br/>
+      For the last 7 years I've been focused in anything related to Web 3
+    technologies focusing on <b>public and permissioned Blockchain</b>
+    and <b>Self Souvering Identity</b> and related use cases (<b>Decentralized
+    finances</b>, <b>traceability</b>, <b>data transparency</b>, ...).
+    <b>
+    )
   </td>
 </tr>
 </tbody>
@@ -279,14 +284,14 @@ var changeColor = function ( ) {
 
 
 <a id="anchor_chartCompanyYear" }{ /></a>
-<h2>VISUAL SUMMARY COMPANY/YEAR</h2> 
+<h2>VISUAL SUMMARY COMPANY/YEAR</h2>
 <table id="table_chartCompanyYear" main_block cellpadding=0 cellspacing=0>
 <tbody>
-<tr style='line-height:0.9em'>
+<tr>
     <td comp> </td>
     <td bb colspan="98" center>YEAR</td>
 </tr>
-<tr style='line-height:0.9em'>
+<tr>
     <td comp> </td>
     <td s colspan="4" center>01</td>
     <td s colspan="4" center>02</td>
@@ -310,11 +315,12 @@ var changeColor = function ( ) {
     <td s colspan="4" center>20</td>
     <td s colspan="4" center>21</td>
     <td s colspan="4" center>22</td>
+    <td s colspan="4" center>23</td>
 </tr>
 <tr id='daratel'>
     <td comp>DARATEL </td>
 <!--01--><td s  /> <td x/> <td x/> <td x/> <!--02--><td s x/> <td x/> <td x/> <td x/> <!--03--><td s x/> <td x/> <td x/> <td x/> <!--04--><td s x/> <td x/> <td x/> <td x/>
-<!--05--><td s x/> <td x/> <td x/> <td x/> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td  /> <td  /> <!--08--><td s  /> <td  /> <td  /> <td  /> 
+<!--05--><td s x/> <td x/> <td x/> <td x/> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td  /> <td  /> <!--08--><td s  /> <td  /> <td  /> <td  />
 <!--09--><td s  /> <td  /> <td  /> <td  /> <!--10--><td s  /> <td  /> <td  /> <td  /> <!--11--><td s  /> <td  /> <td  /> <td  /> <!--12--><td s  /> <td  /> <td  /> <td  />
 <!--13--><td s  /> <td  /> <td  /> <td  /> <!--14--><td s  /> <td  /> <td  /> <td  /> <!--15--><td s  /> <td  /> <td  /> <td  />
 <!--16--><td s /> <td  /> <td  /> <td  />
@@ -324,11 +330,12 @@ var changeColor = function ( ) {
 <!--20--><td s /> <td  /> <td  /> <td  />
 <!--21--><td s /> <td  /> <td  /> <td  />
 <!--22--><td s /> <td  /> <td  /> <td  />
+<!--23--><td s /> <td  /> <td  /> <td  />
 </tr>
 <tr id='ccunizar'>
     <td comp>Cen.C&aacute;l.Uni.Zar.</td>
-<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td x/> <td x/> <!--03--><td s x/> <td x/> <td x/> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  /> 
-<!--05--><td s  /> <td  /> <td  /> <td  /> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td  /> <td  /> <!--08--><td s  /> <td  /> <td  /> <td  /> 
+<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td x/> <td x/> <!--03--><td s x/> <td x/> <td x/> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  />
+<!--05--><td s  /> <td  /> <td  /> <td  /> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td  /> <td  /> <!--08--><td s  /> <td  /> <td  /> <td  />
 <!--09--><td s  /> <td  /> <td  /> <td  /> <!--10--><td s  /> <td  /> <td  /> <td  /> <!--11--><td s  /> <td  /> <td  /> <td  /> <!--12--><td s  /> <td  /> <td  /> <td  />
 <!--13--><td s  /> <td  /> <td  /> <td  /> <!--14--><td s  /> <td  /> <td  /> <td  /> <!--15--><td s  /> <td  /> <td  /> <td  />
 <!--16--><td s/> <td  /> <td  /> <td  />
@@ -338,11 +345,12 @@ var changeColor = function ( ) {
 <!--20--><td s /> <td  /> <td  /> <td  />
 <!--21--><td s /> <td  /> <td  /> <td  />
 <!--22--><td s /> <td  /> <td  /> <td  />
+<!--23--><td s /> <td  /> <td  /> <td  />
 </tr>
 <tr id='freelance'>
     <td comp>FreeLance </td>
-<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  /> 
-<!--05--><td s  /> <td  /> <td x/> <td x/> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td  /> <td  /> <!--08--><td s  /> <td  /> <td  /> <td  /> 
+<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  />
+<!--05--><td s  /> <td  /> <td x/> <td x/> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td  /> <td  /> <!--08--><td s  /> <td  /> <td  /> <td  />
 <!--09--><td s  /> <td  /> <td  /> <td  /> <!--10--><td s  /> <td  /> <td x/> <td x/> <!--11--><td s x/> <td x/> <td  /> <td  /> <!--12--><td s  /> <td  /> <td  /> <td  />
 <!--13--><td s  /> <td  /> <td  /> <td  /> <!--14--><td s  /> <td  /> <td  /> <td x/> <!--15--><td s x/> <td x/> <td  /> <td  />
 <!--16--><td s/> <td  /> <td  /> <td  />
@@ -352,10 +360,11 @@ var changeColor = function ( ) {
 <!--20--><td s /> <td  /> <td  /> <td  />
 <!--21--><td s /> <td  /> <td  /> <td  />
 <!--22--><td s /> <td  /> <td  /> <td  />
+<!--23--><td s /> <td  /> <td  /> <td  />
 </tr>
 <tr id='wpr'>
     <td comp>W.P.R. </td>
-<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  /> 
+<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  />
 <!--05--><td s  /> <td  /> <td  /> <td x/> <!--06--><td s x/> <td x/> <td x/> <td x/> <!--07--><td s x/> <td x/> <td x/> <td x/> <!--08--><td s x/> <td x/> <td x/> <td x/>
 <!--09--><td s x/> <td x/> <td x/> <td  /> <!--10--><td s  /> <td  /> <td  /> <td  /> <!--11--><td s  /> <td  /> <td  /> <td  /> <!--12--><td s  /> <td  /> <td  /> <td  />
 <!--13--><td s  /> <td  /> <td  /> <td  /> <!--14--><td s  /> <td  /> <td  /> <td  /> <!--15--><td s  /> <td  /> <td  /> <td  />
@@ -366,11 +375,12 @@ var changeColor = function ( ) {
 <!--20--><td s /> <td  /> <td  /> <td  />
 <!--21--><td s /> <td  /> <td  /> <td  />
 <!--22--><td s /> <td  /> <td  /> <td  />
+<!--23--><td s /> <td  /> <td  /> <td  />
 </tr>
 <tr id='diversia'>
     <td comp>DiversiaTV</td>
-<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  /> 
-<!--05--><td s  /> <td  /> <td  /> <td  /> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td x/> <td x/> <!--08--><td s x/> <td x/> <td x/> <td x/> 
+<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  />
+<!--05--><td s  /> <td  /> <td  /> <td  /> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td x/> <td x/> <!--08--><td s x/> <td x/> <td x/> <td x/>
 <!--09--><td s x/> <td x/> <td x/> <td x/> <!--10--><td s x/> <td x/> <td x/> <td x/> <!--11--><td s x/> <td x/> <td  /> <td  /> <!--12--><td s  /> <td  /> <td  /> <td  />
 <!--13--><td s  /> <td  /> <td  /> <td  /> <!--14--><td s  /> <td  /> <td  /> <td  /> <!--15--><td s  /> <td  /> <td  /> <td  />
 <!--16--><td s/> <td  /> <td  /> <td  />
@@ -380,10 +390,11 @@ var changeColor = function ( ) {
 <!--20--><td s /> <td  /> <td  /> <td  />
 <!--21--><td s /> <td  /> <td  /> <td  />
 <!--22--><td s /> <td  /> <td  /> <td  />
+<!--23--><td s /> <td  /> <td  /> <td  />
 </tr>
 <tr id='viotech'>
     <td comp>Viotech</td>
-<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  /> 
+<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  />
 <!--05--><td s  /> <td  /> <td  /> <td  /> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td  /> <td  /> <!--08--><td s  /> <td  /> <td  /> <td  />
 <!--09--><td s  /> <td  /> <td  /> <td  /> <!--10--><td s  /> <td  /> <td  /> <td  /> <!--11--><td s  /> <td  /> <td  /> <td x/> <!--12--><td s x/> <td x/> <td x/> <td x/>
 <!--13--><td s x/> <td x/> <td x/> <td x/> <!--14--><td s x/> <td x/> <td x/> <td  /> <!--15--><td s  /> <td  /> <td  /> <td  />
@@ -394,10 +405,11 @@ var changeColor = function ( ) {
 <!--20--><td s /> <td  /> <td  /> <td  />
 <!--21--><td s /> <td  /> <td  /> <td  />
 <!--22--><td s /> <td  /> <td  /> <td  />
+<!--23--><td s /> <td  /> <td  /> <td  />
 </tr>
 <tr id='everis'>
     <td comp>Everis(NTT data)</td>
-<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  /> 
+<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  />
 <!--05--><td s  /> <td  /> <td  /> <td  /> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td  /> <td  /> <!--08--><td s  /> <td  /> <td  /> <td  />
 <!--09--><td s  /> <td  /> <td  /> <td  /> <!--10--><td s  /> <td  /> <td  /> <td  /> <!--11--><td s  /> <td  /> <td  /> <td  /> <!--12--><td s  /> <td  /> <td  /> <td  />
 <!--13--><td s  /> <td  /> <td  /> <td  /> <!--14--><td s  /> <td  /> <td  /> <td  /> <!--15--><td s  /> <td  /> <td x/> <td x/>
@@ -408,10 +420,11 @@ var changeColor = function ( ) {
 <!--20--><td s x/> <td x/> <td x/> <td x/>
 <!--21--><td s x/> <td x/> <td  /> <td  />
 <!--22--><td s  /> <td  /> <td  /> <td  />
+<!--23--><td s /> <td  /> <td  /> <td  />
 </tr>
 <tr id='accenture'>
     <td comp>Accenture</td>
-<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  /> 
+<!--01--><td s  /> <td  /> <td  /> <td  /> <!--02--><td s  /> <td  /> <td  /> <td  /> <!--03--><td s  /> <td  /> <td  /> <td  /> <!--04--><td s  /> <td  /> <td  /> <td  />
 <!--05--><td s  /> <td  /> <td  /> <td  /> <!--06--><td s  /> <td  /> <td  /> <td  /> <!--07--><td s  /> <td  /> <td  /> <td  /> <!--08--><td s  /> <td  /> <td  /> <td  />
 <!--09--><td s  /> <td  /> <td  /> <td  /> <!--10--><td s  /> <td  /> <td  /> <td  /> <!--11--><td s  /> <td  /> <td  /> <td  /> <!--12--><td s  /> <td  /> <td  /> <td  />
 <!--13--><td s  /> <td  /> <td  /> <td  /> <!--14--><td s  /> <td  /> <td  /> <td  /> <!--15--><td s  /> <td  /> <td  /> <td  />
@@ -421,7 +434,8 @@ var changeColor = function ( ) {
 <!--19--><td s  /> <td  /> <td  /> <td  />
 <!--20--><td s  /> <td  /> <td  /> <td  />
 <!--21--><td s  /> <td  /> <td x/> <td x/>
-<!--22--><td s x/> <td x/> <td  /> <td  />
+<!--22--><td s x/> <td x/> <td x/> <td x/>
+<!--23--><td s x/> <td  /> <td  /> <td  />
 </tr>
 
 
@@ -473,12 +487,12 @@ var changeColor = function ( ) {
   <td bb center>2 Years</td>
   <td bb center>3+Years</td>
 </tr>
-<tr><td center bb colspan=3>&nbsp;IT &amp; Telecommunications       </td></tr> 
-<tr><td center bb colspan=3>&nbsp;Consultancy Services              </td></tr> 
-<tr><td center bb colspan=3>&nbsp;Media &amp; Entertainment         </td></tr> 
-<tr><td center bb colspan=3>&nbsp;ERP                               </td></tr> 
-<tr><td center bb colspan=3>&nbsp;Telephony Applications(IVR)       </td></tr> 
-<tr><td center bb colspan=3>&nbsp;Fintech(Blockchain, Payments, HFT)</td></tr> 
+<tr><td center bb colspan=3>&nbsp;IT &amp; Telecommunications       </td></tr>
+<tr><td center bb colspan=3>&nbsp;Consultancy Services              </td></tr>
+<tr><td center bb colspan=3>&nbsp;Media &amp; Entertainment         </td></tr>
+<tr><td center bb colspan=3>&nbsp;ERP                               </td></tr>
+<tr><td center bb colspan=3>&nbsp;Telephony Applications(IVR)       </td></tr>
+<tr><td center bb colspan=3>&nbsp;Fintech(Blockchain, Payments, HFT)</td></tr>
 <tr><td center bb colspan=1>&nbsp;Manufacturing                     </td>
     <td center bb colspan=2></td>                                        </tr>
 </tbody>
@@ -533,16 +547,16 @@ var changeColor = function ( ) {
  <td>Duties</td>
  <td>
      <ul>
-       <li>Study and analysis of blockchain architectures (<span importantTech>Bitcoin, Ripple, Ethereum</span>, Corda R3, Lightning,... ), 
+       <li>Study and analysis of blockchain architectures (<span importantTech>Bitcoin, Ripple, Ethereum</span>, Corda R3, Lightning,... ),
            and financial-cryptography related technologies</li>
-       <li>Initial java implementation of 
-	       <a href='https://github.com/interledger/java-crypto-conditions'>CryptoConditions</a> 
+       <li>Initial java implementation of
+	       <a href='https://github.com/interledger/java-crypto-conditions'>CryptoConditions</a>
            (<a ref='https://github.com/interledger/rfcs/tree/master/0002-crypto-conditions'>Crypto-Condition spec</a>)
            and  collaboration in the development of Interledger Protocol <a href='https://github.com/interledger/java-ilp-core'>
            Java implementation</a> and <a href='https://github.com/everis-innolab/ilp-everconnector'>PoC ledger</a></li>
        <li>Development of generic Ethereum development framework for non-repudiable tracing,
 	       and probe of existence using <span importantTech>Java, Kotlin, VertX and Kafka(JSON/JSON-Schema)</span>
-           for the FrontEnd REST API and <span importantTech>web3j</span> for the Blockchain 
+           for the FrontEnd REST API and <span importantTech>web3j</span> for the Blockchain
            "backend" as well as other PoC Blockchain applications for Insurance, Public Sector
             and  finance (exchanges, auctions, ...)</li>
        <li>Development of PoCs Decentralized Applications (DApps) based on <span importantTech>Angular 10</span>
@@ -552,20 +566,20 @@ var changeColor = function ( ) {
            based or related to blockchain highlighting blockchain notarization projects
            for <a target="_new" href="https://europa.eu/europass/en">Europass</a> including
            production deployments, and technical support and advise for the European Blockchain
-           Service Architecture framework 
+           Service Architecture framework
            (<a target="_new" href="https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/ebsi">EBSI</a>)
            in areas like functional testing and adoption of Solidity development "best-patterns".</li>
        <li>Ethereum backed software for control of Real State power-supply and gas provisioning for
            a major international firm.</li>
-       <li>Study of Distributed Digital Identity solutions ("Self Souverign ID") backed by 
-           Ethereum public/consortium networks and W3C DID and W3C Verifiable Credentials 
+       <li>Study of Distributed Digital Identity solutions ("Self Souverign ID") backed by
+           Ethereum public/consortium networks and W3C DID and W3C Verifiable Credentials
            (draft) standards</li>
        <li>Internal introductory and advanced blockchain training to IT personnel</li>
        <li>Design of the blockchain architecture (smart-contracts and middleware) and
            computing/deployment infrastructure for a consortium network focusing on
            automatic payments and billing of Electric Car stations.</li>
-       <li>Deployments based on <span importantTech>monolitic and micro(decoupled)</span> 
-           architectures based on different tecnologies.(JEE app servers, tomcat, Kubernetes/OpenShift, 
+       <li>Deployments based on <span importantTech>monolitic and micro(decoupled)</span>
+           architectures based on different tecnologies.(JEE app servers, tomcat, Kubernetes/OpenShift,
            standard/contanerized linux deployments, Azure pipelines, ...)</li>
      </ul>
  </td>
@@ -632,26 +646,26 @@ var changeColor = function ( ) {
           able to adapt and stream content to the different clients. Other provided functionalities
           include a multi-channel sharing mechanism, chat/video-conference, smart-TV functionalities
           -for example possibility to watch TV and browse the web simultaneously-<br/>
-      </li>Development of the server based on <span importantTech>Python+Twisted</span> 
-           (API design, unit-test, functional-tests, documentation). 
+      </li>Development of the server based on <span importantTech>Python+Twisted</span>
+           (API design, unit-test, functional-tests, documentation).
       </li>
-      <li>Development of the Web client based on HTML+Javascript+CSS, using advanced 
-          HTML5 technologies (<span importantTech>WebSockets</span>, 
+      <li>Development of the Web client based on HTML+Javascript+CSS, using advanced
+          HTML5 technologies (<span importantTech>WebSockets</span>,
           <span importantTech>WebRTC</span>, AJAX, ...).
       </li>
       <li>The server is about 15000 lines of Python code and the HTML client about 17000 lines of javascript code.</li>
-      <li>Research and integration of different technologies for <span importantTech>video content adaptation</span> 
+      <li>Research and integration of different technologies for <span importantTech>video content adaptation</span>
           (transcoding, bandwidth adaptation, HLS &amp; DASH streaming).<br/>
-          Development and support of a <span importantTech>multithreaded C server</span> to transcode 
-          in parallel <span importantTech>live(real time transcoding) TV</span>. 
-          Creation and maintenance of the Debian packages and "continuous-integration" infrastructure.<br/> 
+          Development and support of a <span importantTech>multithreaded C server</span> to transcode
+          in parallel <span importantTech>live(real time transcoding) TV</span>.
+          Creation and maintenance of the Debian packages and "continuous-integration" infrastructure.<br/>
           Adaptation to embedded ARM systems using the <span importantTech>cross-compilation GCC tool chain</span>.<br/>
       </li>
-      <li>Support for the R&amp;D <a  target='_blank' href='https://www.facebook.com/ictalicante'>Alicante project</a>, mainly as 
+      <li>Support for the R&amp;D <a  target='_blank' href='https://www.facebook.com/ictalicante'>Alicante project</a>, mainly as
           software developer, implementing different protocols and technologies presented in the software stack/architecture.
-          (with different services implemented in <span importantTech>Java/JEE/Spring</span>, Python and PHP) 
+          (with different services implemented in <span importantTech>Java/JEE/Spring</span>, Python and PHP)
       </li>
-      <li>Development of an embedded application (implemented in <span importantTech>LUA</span> with C extensions 
+      <li>Development of an embedded application (implemented in <span importantTech>LUA</span> with C extensions
           and an HTML5 Interface) for P2P video delivery
       </li>
      </ul>
@@ -675,14 +689,14 @@ var changeColor = function ( ) {
  <td>
      <ul>
       <li>
-       Development of a <span importantTech>VoiceXML</span> custom front-end to control a telephony system based on 
-       <span importantTech>Siatvox</span>. The system includes the development of a <span importantTech>C++ dll extension</span> to 
-       the Siatvox platform, a java extension to <a  target='_blank' href='http://jvoicexml.sourceforge.net/'>JVoiceXML</a> as well as an 
-       intermediate (java) message broker to provide for asynchronous communications between both 
-       ends (Siatvox and JVoiceXML). 
+       Development of a <span importantTech>VoiceXML</span> custom front-end to control a telephony system based on
+       <span importantTech>Siatvox</span>. The system includes the development of a <span importantTech>C++ dll extension</span> to
+       the Siatvox platform, a java extension to <a  target='_blank' href='http://jvoicexml.sourceforge.net/'>JVoiceXML</a> as well as an
+       intermediate (java) message broker to provide for asynchronous communications between both
+       ends (Siatvox and JVoiceXML).
       </li>
       <li>
-       Development of a Java <a  target='_blank' href='http://sourceforge.net/projects/siruna/'>Siruna adaptor</a> to 
+       Development of a Java <a  target='_blank' href='http://sourceforge.net/projects/siruna/'>Siruna adaptor</a> to
        automatically translate HTML into VoiceXML.
       </li>
       <li>
@@ -690,15 +704,15 @@ var changeColor = function ( ) {
        front-end for the administration and monitoring of the systems just described.
       </li>
       <li>
-       Development of a <span importantTech>C++ (event-driven) application for Samsung Bada</span> phones 
-       providing a native (multi-)touch interface to PaginasAmarillas (YellowPages) as well as 
-       integration with Google Maps through an embedded browser. 
+       Development of a <span importantTech>C++ (event-driven) application for Samsung Bada</span> phones
+       providing a native (multi-)touch interface to PaginasAmarillas (YellowPages) as well as
+       integration with Google Maps through an embedded browser.
       </li>
       <li>
-       Development of an webapp for the administration of an custom IVR setup. The 
+       Development of an webapp for the administration of an custom IVR setup. The
        application was developed using PHP+Smarty+MySQL and JQuery (javascript) for the Web UI.
 <!--
-       An online demo can be visited at 
+       An online demo can be visited at
        <a  target='_blank' href="http://178.79.168.230/sipmanager/" title="http://178.79.168.230/sipmanager/">http://178.79.168.230/sipmanager/</a>
 -->
       </li>
@@ -707,7 +721,7 @@ var changeColor = function ( ) {
 </tr>
 <!-- ***************************************************************************************************  -->
 <tr bt>
-   <td>Date</td> 
+   <td>Date</td>
    <td>April 2007- September 2011<br>
       (I continued to work simultaneously for World Premium Rates as external IT consultant up to July 2009).
    </td>
@@ -724,8 +738,8 @@ var changeColor = function ( ) {
  <td>
      <ul>
      <li>
-      Creation of the hardware requirements &amp; software specifications for a custom 
-      <span importantTech>Video On Demand</span> solution and entertainment system for hotels and hospitals. 
+      Creation of the hardware requirements &amp; software specifications for a custom
+      <span importantTech>Video On Demand</span> solution and entertainment system for hotels and hospitals.
      </li>
      <li> <span importantTech>PHP/Javascript/CSS/Shell script</span> programming. </li>
      <li> <span importantTech>SVN</span> Repository administration&amp;coordination. </li>
@@ -737,15 +751,15 @@ var changeColor = function ( ) {
      <ul>
      <li>
          Development of a plugable system to connect the Video On Demand to Hotel's
-         management software, either directly or through the mediation of the 
+         management software, either directly or through the mediation of the
          <span importantTech>Char uTile middleware</span>.
      </li>
      <li>
-         (July 2009 to October 2009) :implementation and manufacturing control of an 
+         (July 2009 to October 2009) :implementation and manufacturing control of an
          <span importantTech>universal infrared transceiver</span> controlled by software.
-         The hardware was designed to be fully adaptable to different IR 
+         The hardware was designed to be fully adaptable to different IR
          protocols and provides extra I/O ports to simplify integration with domotic systems.
-         It was based on the previous design from 
+         It was based on the previous design from
          <a  target='_blank' href='http://www.huitsing.nl/irftdi/' target='_blank'>Albert Huitsing FTDI design</a>
          with a few bugs fixed (see cite 2-7-2009 about Enrique's patch)
      </li>
@@ -767,18 +781,18 @@ var changeColor = function ( ) {
  <td>
      <ul>
      <li>
-        Studying, designing and implementing new payment systems based on Premium SMS 
-        &amp; Phone calls, as well as automating &amp; monitoring of IT 
+        Studying, designing and implementing new payment systems based on Premium SMS
+        &amp; Phone calls, as well as automating &amp; monitoring of IT
         systems and billing processes (watchDog, automated log reporting,...).
      </li>
-     <li> Porting/correcting/updating existing documentation to the new CMS based on 
+     <li> Porting/correcting/updating existing documentation to the new CMS based on
           <span importantTech>Plone</span></li>
      <li>
          Development of a <b>multi-threaded web app offering real time statistics &amp; charts</b>
          (0.5 seconds maximum delay with up to 100 simultaneous users).
          Major Spanish TV broadcasting companies -Endemol, Tele5, Antena3, ...- use it
            in a daily basis to check audience response.<br>
-         The chart system was developed with the help of 
+         The chart system was developed with the help of
          <span importantTech>The Dojo Toolkit</span> (100% Javascript+SVG, no flash plugin).<br>
          The final code added up to 8874 lines of java, 3627 lines of jsp, 800 lines
          of javascript and about 1500 lines of shell scripts for supporting task.
@@ -817,8 +831,8 @@ var changeColor = function ( ) {
  <td>
      <ul>
      <li>
-      providing advice for&nbsp; modeling, developing and integrating database based 
-      solutions for the enterprise using standard Web technologies (J2EE, 
+      providing advice for&nbsp; modeling, developing and integrating database based
+      solutions for the enterprise using standard Web technologies (J2EE,
       <span importantTech>Spring Web Flow</span>, ...)
      </li>
      <li>custom python-based solutions for fast development.</li>
@@ -833,7 +847,7 @@ var changeColor = function ( ) {
  <td>Employer</td>
  <td>
    <b>CENTRO DE CALCULO of the UNIVERSITY OF ZARAGOZA</b>&nbsp;
-  <a  target='_blank' href="http://sicuz.unizar.es/">(http://www.unizar.es/sicuz/) </a>&nbsp; 
+  <a  target='_blank' href="http://sicuz.unizar.es/">(http://www.unizar.es/sicuz/) </a>&nbsp;
   <br>(<b>After passing a national public entrance exam, 4th classified over 200 examined.</b>)
  </td>
 </tr>
@@ -868,7 +882,7 @@ var changeColor = function ( ) {
  <td>
      <ul>
        <li>
-         Development of a custom <span importantTech>Supply Chain/ERP+CRM Web application</span> 
+         Development of a custom <span importantTech>Supply Chain/ERP+CRM Web application</span>
          based on J2EE for internal/external use. <span importantTech>JBoss</span> was used as application server
          and PostgreSQL as DDBB.
        </li>
@@ -952,7 +966,7 @@ var changeColor = function ( ) {
 </table><!-- id: table_laboralExperience -->
 <!-- p style="page-break-after:always;"></p -->
 <a id="anchor_languages" }{ />
-<h2>LANGUAGES</h2> 
+<h2>LANGUAGES</h2>
 <table id="table_languages" border="0" main_block>
  <tbody>
  <tr>
@@ -976,11 +990,11 @@ var changeColor = function ( ) {
    <td>
    <ul>
      <li><a target="_blank" href='https://stackexchange.com/users/1233610/earizon?tab=accounts'>Profile @ Stack exchange</a> </li>
-     <li> 
+     <li>
        <a target="_blank" href='https://github.com/earizon/'>GitHub Account</a>,
        <a target="_blank" href='https://github.com/earizon?tab=activity'>GitHub Activity</a>
-     </li> 
-     <li><a target="_blank" href=' https://www.linkedin.com/in/enrique-arizon-benito-8466458/' >(Boring) Linked-In profile</a></li> 
+     </li>
+     <li><a target="_blank" href=' https://www.linkedin.com/in/enrique-arizon-benito-8466458/' >(Boring) Linked-In profile</a></li>
      <li><a target="_blank" href='http://www.oficina24x7.com'>"IT notes"</a> personal project based on the
          <a target='_blank' href='https://singlepagebookproject.github.io/SPB/'>Single-Page Book Project CMS</a>. </li>
      <li><a target="_blank" href='https://earizon.github.io/txt_world_domination/'>TXT World Domination</a> personal project (IT Notes "2.0")</li>
@@ -1011,22 +1025,22 @@ var changeColor = function ( ) {
 
 </body>
 </html>
-<!-- 
+<!--
 Cliffton Report:
-• Learner: 
-  Exceptionally talented in the Learned theme have a great desire to learn and want to 
+• Learner:
+  Exceptionally talented in the Learned theme have a great desire to learn and want to
   continuosly improve. The process of learning, rather than the outcome, excites them.
 
 • Deliberateive:
-  People exceptional talented in the Deliberative theme are best described by the 
+  People exceptional talented in the Deliberative theme are best described by the
  serious care they take in making decisions or choices. They anticipate obstacles.
 
-• Context: Pe. excp. talented in the Con. theme enjoy thinking about the past. They understand 
+• Context: Pe. excp. talented in the Con. theme enjoy thinking about the past. They understand
   the present by researching its history.
 
-• Analytical search for reasons and causes. They have the ability to think about all of 
+• Analytical search for reasons and causes. They have the ability to think about all of
   the factos that might affect a situations.
 
-• Input: Have a need to collect and archive. They may accumulate information, ideas, 
+• Input: Have a need to collect and archive. They may accumulate information, ideas,
   artifacts or even relationships.
 -->
