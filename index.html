@@ -77,7 +77,15 @@ td { vertical-align:top; line-height: 1.4em;}
 #table_chartTechnologyYears tr td {
     margin: 0;
     padding: 0 0 0 0.2em;
-    text-align: center;
+    text-align: left;
+    border: 3px solid white;
+}
+#table_chartTechnologyYears tr {
+    background-color: #EEEEEE !important; 
+
+}
+#table_chartTechnologyYears td:not([white]) {
+  background-image: linear-gradient(to right, #FFFFFF, #999999);
 }
 
 td[left] { width:10em; text-align: right; }
@@ -94,8 +102,10 @@ td[s]{ border-left:1px solid black; }
 #accenture td[x]{ background-color:#AAF;  }
 
 tr:nth-child(odd) { background-color: #EEEEEE; }
-.even             { background-color: rgb(207, 226, 243); }
+/* .even             { background-color: rgb(207, 226, 243); } */
 tr:nth-child(even){               }
+
+
 
 
 *[blue]   { background-color:   #DDF; }
@@ -499,32 +509,31 @@ var changeColor = function ( ) {
 <table id="table_chartTechnologyYears" main_block cellpadding=0 cellspacing=0 >
 <tbody>
 <tr>
-  <td bb center>1 Year</td>
-  <td bb center>2 Years</td>
-  <td bb center>3 Years</td>
-  <td bb center>4 Years</td>
-  <td bb center>5+ Years</td>
+  <th bb center style="border:0">1  Year  &nbsp;&nbsp;&nbsp;     </th>
+  <th bb center style="border:0">2  Years &nbsp;&nbsp;&nbsp;     </th>
+  <th bb center style="border:0">3  Years &nbsp;&nbsp;&nbsp;     </th>
+  <th bb center style="border:0">4  Years &nbsp;&nbsp;&nbsp;     </th>
+  <th bb center style="border:0">5  Years &nbsp;&nbsp;&nbsp;     </th>
+  <th bb center style="border:0">&gt;6 Years &nbsp;&nbsp;&nbsp;</th>
 </tr>
-<tr> <td br bb colspan=5>&nbsp;Programming&amp;API design</td></tr>
-<tr> <td br bb colspan=5>&nbsp;Frontend Development (JavaScript/TypeScript,Angular/Preact/QT/GTK/,...)</td> </tr>
-<tr> <td br bb colspan=5>&nbsp;Middleware/Backend  Development (VertX/Spring/JEE, GoLang, Twisted/Django, ESB, ETL/Batch, ...)</td> </tr>
-<tr> <td br bb colspan=5>&nbsp;TCP/IP (+REST, RPC, gRPC, ...)</td> </tr>
-<tr> <td br bb colspan=5>&nbsp;Java/Java EE/Spring</td> </tr>
-<tr> <td br bb colspan=5>&nbsp;Linux/UNIX (GNU utils, profiling, low-level-monitoring, ...)   </td> </tr>
-<tr> <td br bb colspan=5>&nbsp;DevOps(Git,Containers,Shell script,CI-CD, ...)</td> </tr>
-<tr> <td br bb colspan=5>&nbsp;Data Architecture (SQL/NO-SQL, Graph, Time Series, ...)</td> </tr>
-<tr> <td br bb colspan=5>&nbsp;Web Tech (JS,HTML5, REST APIs/GraphQL, Cache, ...)</td> </tr>
-<tr> <td br bb colspan=5>&nbsp;Blockchain/FinTech crypto</td> </tr>
-<tr> <td br bb colspan=5>&nbsp;Micro(Decoupled) Services</td> </tr>
-<tr> <td br bb colspan=5>&nbsp;Distributed Architectures (Event-Stream/Async/Strong-Consistent/...)</td> </tr>
-<tr> <td br bb colspan=4>&nbsp;C (stdlib/glib, glibc)</td> <td white    colspan=1></td> </tr>
-<tr> <td br bb colspan=3>&nbsp;Go Lang      </td> <td white    colspan=2></td> </tr>
-<tr> <td br bb colspan=3>&nbsp;Real Time app</td> <td white    colspan=2></td> </tr>
-<tr> <td br bb colspan=3>&nbsp;Embedded(uControllers,LUA,uPython,cross-compilation,...)</td> <td white    colspan=3></td> </tr>
-<tr> <td br bb colspan=2>&nbsp;Android+NDK  </td> <td white    colspan=4></td> </tr>
-<tr> <td br bb colspan=2>&nbsp;ML/Agentic AI (theory)  </td> <td white colspan=4></td> </tr>
-<tr> <td br bb colspan=1>&nbsp;ML/Agentic AI (practice)</td> <td white colspan=5></td> </tr>
-<tr> <td br bb colspan=1>&nbsp;C++ (&lt; v11)</td> <td white    colspan=5></td> </tr>
+<tr> <td br bb colspan=6>&nbsp;Backend Architectures (sync/async, event Driven, microservices,  ETL/Batch, distributed)</td> </tr>
+<tr> <td br bb colspan=6>&nbsp;Security (best-practices, OWASP, OAuth, cryptography)</td> </tr>
+<tr> <td br bb colspan=6>&nbsp;Java/Kotlin (Core, Spring,...)                       </td> </tr>
+<tr> <td br bb colspan=6>&nbsp;Linux (scripting, profiling,  security)   </td> </tr>
+<tr> <td br bb colspan=6>&nbsp;DevOps (Git,Containers,CI-CD,Cloud)       </td> </tr>
+<tr> <td br bb colspan=5>&nbsp;Data Arch.(SQL/NO-SQL, Graphs, Time Series)</td>
+                                                                       <td white    colspan=1></td></tr>
+<tr> <td br bb colspan=5>&nbsp;Frontend (Web, embedded, Android) </td> <td white colspan=2></td></tr>
+<tr> <td br bb colspan=5>&nbsp;Blockchain/FinTech crypto         </td> <td white colspan=2></td></tr>
+<tr> <td br bb colspan=4>&nbsp;C (stdlib/glib, glibc)            </td> <td white colspan=2></td> </tr>
+<tr> <td br bb colspan=4>&nbsp;Identity (OpenID, SAML)           </td> <td white colspan=2></td> </tr>
+<tr> <td br bb colspan=4>&nbsp;Python                            </td> <td white colspan=2></td> </tr>
+<tr> <td br bb colspan=3>&nbsp;Go Lang                           </td> <td white colspan=3></td> </tr>
+<tr> <td br bb colspan=3>&nbsp;Real Time app                     </td> <td white colspan=3></td> </tr>
+<tr> <td br bb colspan=3>&nbsp;Embedded(uControllers,LUA,uPython)</td> <td white colspan=3></td> </tr>
+<tr> <td br bb colspan=2>&nbsp;ML/Agentic AI (theory)            </td> <td white colspan=4></td> </tr>
+<tr> <td br bb colspan=1>&nbsp;ML/Agentic AI (practice)          </td> <td white colspan=6></td> </tr>
+<tr> <td br bb colspan=1>&nbsp;C++ (&lt; v11)                    </td> <td white colspan=6></td> </tr>
 </tbody>
 </table><!-- id:table_chartTechnologyYears -->
 <br><br>
